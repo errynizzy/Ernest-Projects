@@ -1,0 +1,186 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	{$pagetitlelabel simcards_batches view}
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN batch_name_fieldblock}<tr class="{$fielddispclass_batch_name}" data-fieldname="batch_name">
+	<td class="rnr-label">
+		{$label simcards_batches batch_name}</td>
+	<td class="rnr-control style3">
+		{$batch_name_value}&nbsp;
+	</td>
+</tr>
+{END batch_name_fieldblock}
+	{BEGIN ICCID_fieldblock}<tr class="{$fielddispclass_ICCID}" data-fieldname="ICCID">
+	<td class="rnr-label">
+		{$label simcards_batches ICCID}</td>
+	<td class="rnr-control style3">
+		{$ICCID_value}&nbsp;
+	</td>
+</tr>
+{END ICCID_fieldblock}
+	{BEGIN supplier_name_fieldblock}<tr class="{$fielddispclass_supplier_name}" data-fieldname="supplier_name">
+	<td class="rnr-label">
+		{$label Custom_Report supplier_name}
+	</td>
+	<td class="rnr-control style3">
+		{$supplier_name_value}&nbsp;
+	</td>
+</tr>
+{END supplier_name_fieldblock}
+	{BEGIN supplier_number_fieldblock}<tr class="{$fielddispclass_supplier_number}" data-fieldname="supplier_number">
+	<td class="rnr-label">
+		{$label Custom_Report supplier_number}
+	</td>
+	<td class="rnr-control style3">
+		{$supplier_number_value}&nbsp;
+	</td>
+</tr>
+{END supplier_number_fieldblock}
+	{BEGIN Activation_Status_fieldblock}<tr class="{$fielddispclass_Activation_Status}" data-fieldname="Activation_Status">
+	<td class="rnr-label">
+		{$label Custom_Report Activation_Status}
+	</td>
+	<td class="rnr-control style3">
+		{$Activation_Status_value}&nbsp;
+	</td>
+</tr>
+{END Activation_Status_fieldblock}
+	{BEGIN Event_date_fieldblock}<tr class="{$fielddispclass_Event_date}" data-fieldname="Event_date">
+	<td class="rnr-label">
+		{$label Custom_Report Event_date}
+	</td>
+	<td class="rnr-control style3">
+		{$Event_date_value}&nbsp;
+	</td>
+</tr>
+{END Event_date_fieldblock}
+	{BEGIN time_fieldblock}<tr class="{$fielddispclass_time}" data-fieldname="time">
+	<td class="rnr-label">
+		{$label Custom_Report time}
+	</td>
+	<td class="rnr-control style3">
+		{$time_value}&nbsp;
+	</td>
+</tr>
+{END time_fieldblock}
+	{BEGIN Active_MSISDN_fieldblock}<tr class="{$fielddispclass_Active_MSISDN}" data-fieldname="Active_MSISDN">
+	<td class="rnr-label">
+		{$label Custom_Report Active_MSISDN}
+	</td>
+	<td class="rnr-control style3">
+		{$Active_MSISDN_value}&nbsp;
+	</td>
+</tr>
+{END Active_MSISDN_fieldblock}
+	{BEGIN Activator_Number_fieldblock}<tr class="{$fielddispclass_Activator_Number}" data-fieldname="Activator_Number">
+	<td class="rnr-label">
+		{$label Custom_Report Activator_Number}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Number_value}&nbsp;
+	</td>
+</tr>
+{END Activator_Number_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

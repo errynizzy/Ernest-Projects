@@ -1,0 +1,160 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	{$pagetitlelabel form_tracking view}
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN D_SL_DSO_RDO_fieldblock}<tr class="{$fielddispclass_D_SL_DSO_RDO}" data-fieldname="D_SL_DSO_RDO">
+	<td class="rnr-label">
+		{$label form_tracking D_SL_DSO_RDO}
+	</td>
+	<td class="rnr-control style3">
+		{$D_SL_DSO_RDO_value}&nbsp;
+	</td>
+</tr>
+{END D_SL_DSO_RDO_fieldblock}
+	{BEGIN TOTAL_SIMCARDS_GIVEN_fieldblock}<tr class="{$fielddispclass_TOTAL_SIMCARDS_GIVEN}" data-fieldname="TOTAL_SIMCARDS_GIVEN">
+	<td class="rnr-label">
+		{$label form_tracking TOTAL_SIMCARDS_GIVEN}
+	</td>
+	<td class="rnr-control style3">
+		{$TOTAL_SIMCARDS_GIVEN_value}&nbsp;
+	</td>
+</tr>
+{END TOTAL_SIMCARDS_GIVEN_fieldblock}
+	{BEGIN SIMCARDS_ACTIVATED_fieldblock}<tr class="{$fielddispclass_SIMCARDS_ACTIVATED}" data-fieldname="SIMCARDS_ACTIVATED">
+	<td class="rnr-label">
+		{$label form_tracking SIMCARDS_ACTIVATED}
+	</td>
+	<td class="rnr-control style3">
+		{$SIMCARDS_ACTIVATED_value}&nbsp;
+	</td>
+</tr>
+{END SIMCARDS_ACTIVATED_fieldblock}
+	{BEGIN SIMCARDS_RETURNED_fieldblock}<tr class="{$fielddispclass_SIMCARDS_RETURNED}" data-fieldname="SIMCARDS_RETURNED">
+	<td class="rnr-label">
+		{$label form_tracking SIMCARDS_RETURNED}
+	</td>
+	<td class="rnr-control style3">
+		{$SIMCARDS_RETURNED_value}&nbsp;
+	</td>
+</tr>
+{END SIMCARDS_RETURNED_fieldblock}
+	{BEGIN SIMCARDS_REJECTED_fieldblock}<tr class="{$fielddispclass_SIMCARDS_REJECTED}" data-fieldname="SIMCARDS_REJECTED">
+	<td class="rnr-label">
+		{$label form_tracking SIMCARDS_REJECTED}
+	</td>
+	<td class="rnr-control style3">
+		{$SIMCARDS_REJECTED_value}&nbsp;
+	</td>
+</tr>
+{END SIMCARDS_REJECTED_fieldblock}
+	{BEGIN SIMCARDS_NOT_RETURNED_fieldblock}<tr class="{$fielddispclass_SIMCARDS_NOT_RETURNED}" data-fieldname="SIMCARDS_NOT_RETURNED">
+	<td class="rnr-label">
+		{$label form_tracking SIMCARDS_NOT_RETURNED}
+	</td>
+	<td class="rnr-control style3">
+		{$SIMCARDS_NOT_RETURNED_value}&nbsp;
+	</td>
+</tr>
+{END SIMCARDS_NOT_RETURNED_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{END body}
+	</body>
+</html>

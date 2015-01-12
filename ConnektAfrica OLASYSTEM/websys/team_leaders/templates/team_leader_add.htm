@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY class="{$stylename} function-add" {$bodyattrs}>{BEGIN body}
+<P align=center>{$header} </P>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+{BEGIN container_add}
+<DIV class="rnr-c rnr-cv rnr-c-add">
+{BEGIN addheader}<DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><SPAN>{$pagetitlelabel team_leader add} 
+</SPAN></DIV>
+{END addheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>{$message}</DIV></DIV>
+{END message_block}<DIV 
+class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN Team_Leader_Name_fieldblock}<TR class={$fielddispclass_Team_Leader_Name} data-fieldname="Team_Leader_Name">
+    <TD class=rnr-label>{BEGIN Team_Leader_Name_label}{$label team_leader Team_Leader_Name}{END Team_Leader_Name_label} </TD>
+    <TD class="rnr-control style3">{$Team_Leader_Name_editcontrol}&nbsp; </TD></TR>
+  {END Team_Leader_Name_fieldblock}{BEGIN POS_Number_fieldblock}<TR class={$fielddispclass_POS_Number} data-fieldname="POS_Number">
+    <TD class=rnr-label>{BEGIN POS_Number_label}{$label team_leader POS_Number}{END POS_Number_label} </TD>
+    <TD class="rnr-control style3">{$POS_Number_editcontrol}&nbsp; 
+  </TD></TR>
+  {END POS_Number_fieldblock}{BEGIN Sales_Coordinator_Name_fieldblock}<TR class={$fielddispclass_Sales_Coordinator_Name} data-fieldname="Sales_Coordinator_Name">
+    <TD class=rnr-label>{BEGIN Sales_Coordinator_Name_label}{$label team_leader Sales_Coordinator_Name}{END Sales_Coordinator_Name_label} </TD>
+    <TD class="rnr-control style3">{$Sales_Coordinator_Name_editcontrol}&nbsp; 
+    </TD></TR>{END Sales_Coordinator_Name_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN addbuttons}<DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Save</A> {END save_button}{BEGIN cancel_button}<A class=rnr-button href="#" {$cancelbutton_attrs}>Cancel</A> {END cancel_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Back to list</A> {END back_button}{BEGIN backToMenu_button}<A class=rnr-button href="#" {$backToMenubutton_attrs}>Back to menu</A> 
+{END backToMenu_button}</DIV>{END addbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_add}</DIV>{END container_all}</DIV>
+<DIV class=rnr-page>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV>
+<P align=center>{$footer} 
+</P>{END body}</BODY></HTML>

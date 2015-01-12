@@ -1,0 +1,825 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel DSO_Dashboard search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Efficiency_Manager_Name}">
+	{BEGIN Efficiency_Manager_Name_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Efficiency_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Efficiency_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Efficiency_Manager_Name}
+	</td>
+	<td>
+		{$Efficiency_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Efficiency_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Efficiency_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Efficiency_Date}">
+	{BEGIN Efficiency_Date_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Efficiency_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Efficiency_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Efficiency_Date}
+	</td>
+	<td>
+		{$Efficiency_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Efficiency_Date_editcontrol1}&nbsp;
+	</td>
+{END Efficiency_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Efficiency_Actual_Visits}">
+	{BEGIN Efficiency_Actual_Visits_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Efficiency_Actual_Visits}
+	</td>
+	<td>
+		<input type="checkbox" {$Efficiency_Actual_Visits_notbox}>
+	</td>
+	<td>
+		{$searchtype_Efficiency_Actual_Visits}
+	</td>
+	<td>
+		{$Efficiency_Actual_Visits_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Efficiency_Actual_Visits_editcontrol1}&nbsp;
+	</td>
+{END Efficiency_Actual_Visits_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Efficiency_Planned_Visits}">
+	{BEGIN Efficiency_Planned_Visits_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Efficiency_Planned_Visits}
+	</td>
+	<td>
+		<input type="checkbox" {$Efficiency_Planned_Visits_notbox}>
+	</td>
+	<td>
+		{$searchtype_Efficiency_Planned_Visits}
+	</td>
+	<td>
+		{$Efficiency_Planned_Visits_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Efficiency_Planned_Visits_editcontrol1}&nbsp;
+	</td>
+{END Efficiency_Planned_Visits_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Effectiveness_Manager_Name}">
+	{BEGIN Effectiveness_Manager_Name_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Effectiveness_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Effectiveness_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Effectiveness_Manager_Name}
+	</td>
+	<td>
+		{$Effectiveness_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Effectiveness_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Effectiveness_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Effectiveness_Total_Visits}">
+	{BEGIN Effectiveness_Total_Visits_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Effectiveness_Total_Visits}
+	</td>
+	<td>
+		<input type="checkbox" {$Effectiveness_Total_Visits_notbox}>
+	</td>
+	<td>
+		{$searchtype_Effectiveness_Total_Visits}
+	</td>
+	<td>
+		{$Effectiveness_Total_Visits_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Effectiveness_Total_Visits_editcontrol1}&nbsp;
+	</td>
+{END Effectiveness_Total_Visits_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Effectiveness_Visits_with_Sales}">
+	{BEGIN Effectiveness_Visits_with_Sales_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Effectiveness_Visits_with_Sales}
+	</td>
+	<td>
+		<input type="checkbox" {$Effectiveness_Visits_with_Sales_notbox}>
+	</td>
+	<td>
+		{$searchtype_Effectiveness_Visits_with_Sales}
+	</td>
+	<td>
+		{$Effectiveness_Visits_with_Sales_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Effectiveness_Visits_with_Sales_editcontrol1}&nbsp;
+	</td>
+{END Effectiveness_Visits_with_Sales_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Effectiveness_MY_Sales}">
+	{BEGIN Effectiveness_MY_Sales_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Effectiveness_MY_Sales}
+	</td>
+	<td>
+		<input type="checkbox" {$Effectiveness_MY_Sales_notbox}>
+	</td>
+	<td>
+		{$searchtype_Effectiveness_MY_Sales}
+	</td>
+	<td>
+		{$Effectiveness_MY_Sales_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Effectiveness_MY_Sales_editcontrol1}&nbsp;
+	</td>
+{END Effectiveness_MY_Sales_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Effectiveness_Date}">
+	{BEGIN Effectiveness_Date_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Effectiveness_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Effectiveness_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Effectiveness_Date}
+	</td>
+	<td>
+		{$Effectiveness_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Effectiveness_Date_editcontrol1}&nbsp;
+	</td>
+{END Effectiveness_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Efficiency_Percent}">
+	{BEGIN Efficiency_Percent_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Efficiency_Percent}
+	</td>
+	<td>
+		<input type="checkbox" {$Efficiency_Percent_notbox}>
+	</td>
+	<td>
+		{$searchtype_Efficiency_Percent}
+	</td>
+	<td>
+		{$Efficiency_Percent_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Efficiency_Percent_editcontrol1}&nbsp;
+	</td>
+{END Efficiency_Percent_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Effectiveness_Percent}">
+	{BEGIN Effectiveness_Percent_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Effectiveness_Percent}
+	</td>
+	<td>
+		<input type="checkbox" {$Effectiveness_Percent_notbox}>
+	</td>
+	<td>
+		{$searchtype_Effectiveness_Percent}
+	</td>
+	<td>
+		{$Effectiveness_Percent_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Effectiveness_Percent_editcontrol1}&nbsp;
+	</td>
+{END Effectiveness_Percent_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_New_Outlets_Per_week_Manager_Name}">
+	{BEGIN New_Outlets_Per_week_Manager_Name_fieldblock}		
+	<td>
+		{$label DSO_Dashboard New_Outlets_Per_week_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$New_Outlets_Per_week_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_New_Outlets_Per_week_Manager_Name}
+	</td>
+	<td>
+		{$New_Outlets_Per_week_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$New_Outlets_Per_week_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END New_Outlets_Per_week_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_New_Outlets_Per_week_New_POS}">
+	{BEGIN New_Outlets_Per_week_New_POS_fieldblock}		
+	<td>
+		{$label DSO_Dashboard New_Outlets_Per_week_New_POS}
+	</td>
+	<td>
+		<input type="checkbox" {$New_Outlets_Per_week_New_POS_notbox}>
+	</td>
+	<td>
+		{$searchtype_New_Outlets_Per_week_New_POS}
+	</td>
+	<td>
+		{$New_Outlets_Per_week_New_POS_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$New_Outlets_Per_week_New_POS_editcontrol1}&nbsp;
+	</td>
+{END New_Outlets_Per_week_New_POS_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_New_Outlets_Per_week_Week_Start}">
+	{BEGIN New_Outlets_Per_week_Week_Start_fieldblock}		
+	<td>
+		{$label DSO_Dashboard New_Outlets_Per_week_Week_Start}
+	</td>
+	<td>
+		<input type="checkbox" {$New_Outlets_Per_week_Week_Start_notbox}>
+	</td>
+	<td>
+		{$searchtype_New_Outlets_Per_week_Week_Start}
+	</td>
+	<td>
+		{$New_Outlets_Per_week_Week_Start_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$New_Outlets_Per_week_Week_Start_editcontrol1}&nbsp;
+	</td>
+{END New_Outlets_Per_week_Week_Start_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_New_Outlets_Per_week_Week_End}">
+	{BEGIN New_Outlets_Per_week_Week_End_fieldblock}		
+	<td>
+		{$label DSO_Dashboard New_Outlets_Per_week_Week_End}
+	</td>
+	<td>
+		<input type="checkbox" {$New_Outlets_Per_week_Week_End_notbox}>
+	</td>
+	<td>
+		{$searchtype_New_Outlets_Per_week_Week_End}
+	</td>
+	<td>
+		{$New_Outlets_Per_week_Week_End_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$New_Outlets_Per_week_Week_End_editcontrol1}&nbsp;
+	</td>
+{END New_Outlets_Per_week_Week_End_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Manager_Name}">
+	{BEGIN Registration_forms_outstanding_Manager_Name_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Manager_Name}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Total_Activations}">
+	{BEGIN Registration_forms_outstanding_Total_Activations_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Total_Activations}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Total_Activations_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Total_Activations}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Total_Activations_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Total_Activations_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Total_Activations_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Rejects}">
+	{BEGIN Registration_forms_outstanding_Rejects_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Rejects}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Rejects_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Rejects}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Rejects_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Rejects_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Rejects_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SIMS_Sold_from_Outlets__Total_Activations}">
+	{BEGIN SIMS_Sold_from_Outlets__Total_Activations_fieldblock}		
+	<td>
+		{$label DSO_Dashboard SIMS_Sold_from_Outlets__Total_Activations}
+	</td>
+	<td>
+		<input type="checkbox" {$SIMS_Sold_from_Outlets__Total_Activations_notbox}>
+	</td>
+	<td>
+		{$searchtype_SIMS_Sold_from_Outlets__Total_Activations}
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Total_Activations_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Total_Activations_editcontrol1}&nbsp;
+	</td>
+{END SIMS_Sold_from_Outlets__Total_Activations_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SIMS_Sold_from_Outlets__With_Airtime}">
+	{BEGIN SIMS_Sold_from_Outlets__With_Airtime_fieldblock}		
+	<td>
+		{$label DSO_Dashboard SIMS_Sold_from_Outlets__With_Airtime}
+	</td>
+	<td>
+		<input type="checkbox" {$SIMS_Sold_from_Outlets__With_Airtime_notbox}>
+	</td>
+	<td>
+		{$searchtype_SIMS_Sold_from_Outlets__With_Airtime}
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__With_Airtime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__With_Airtime_editcontrol1}&nbsp;
+	</td>
+{END SIMS_Sold_from_Outlets__With_Airtime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Title}">
+	{BEGIN Registration_forms_outstanding_Title_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Title}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Title_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Date}">
+	{BEGIN Registration_forms_outstanding_Date_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Date}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Date_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Returned}">
+	{BEGIN Registration_forms_outstanding_Returned_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Returned}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Returned_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Returned}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Returned_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Returned_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Returned_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_forms_outstanding_Not_Returned}">
+	{BEGIN Registration_forms_outstanding_Not_Returned_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Registration_forms_outstanding_Not_Returned}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_forms_outstanding_Not_Returned_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_forms_outstanding_Not_Returned}
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Not_Returned_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_forms_outstanding_Not_Returned_editcontrol1}&nbsp;
+	</td>
+{END Registration_forms_outstanding_Not_Returned_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SIMS_Sold_from_Outlets__Manager_Name}">
+	{BEGIN SIMS_Sold_from_Outlets__Manager_Name_fieldblock}		
+	<td>
+		{$label DSO_Dashboard SIMS_Sold_from_Outlets__Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$SIMS_Sold_from_Outlets__Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_SIMS_Sold_from_Outlets__Manager_Name}
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END SIMS_Sold_from_Outlets__Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SIMS_Sold_from_Outlets__Title}">
+	{BEGIN SIMS_Sold_from_Outlets__Title_fieldblock}		
+	<td>
+		{$label DSO_Dashboard SIMS_Sold_from_Outlets__Title}
+	</td>
+	<td>
+		<input type="checkbox" {$SIMS_Sold_from_Outlets__Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_SIMS_Sold_from_Outlets__Title}
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Title_editcontrol1}&nbsp;
+	</td>
+{END SIMS_Sold_from_Outlets__Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SIMS_Sold_from_Outlets__Date}">
+	{BEGIN SIMS_Sold_from_Outlets__Date_fieldblock}		
+	<td>
+		{$label DSO_Dashboard SIMS_Sold_from_Outlets__Date}
+	</td>
+	<td>
+		<input type="checkbox" {$SIMS_Sold_from_Outlets__Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_SIMS_Sold_from_Outlets__Date}
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__Date_editcontrol1}&nbsp;
+	</td>
+{END SIMS_Sold_from_Outlets__Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SIMS_Sold_from_Outlets__No_Airtime}">
+	{BEGIN SIMS_Sold_from_Outlets__No_Airtime_fieldblock}		
+	<td>
+		{$label DSO_Dashboard SIMS_Sold_from_Outlets__No_Airtime}
+	</td>
+	<td>
+		<input type="checkbox" {$SIMS_Sold_from_Outlets__No_Airtime_notbox}>
+	</td>
+	<td>
+		{$searchtype_SIMS_Sold_from_Outlets__No_Airtime}
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__No_Airtime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SIMS_Sold_from_Outlets__No_Airtime_editcontrol1}&nbsp;
+	</td>
+{END SIMS_Sold_from_Outlets__No_Airtime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_into_the_Channel__Activator_Name}">
+	{BEGIN Airtime_into_the_Channel__Activator_Name_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Airtime_into_the_Channel__Activator_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_into_the_Channel__Activator_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_into_the_Channel__Activator_Name}
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__Activator_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__Activator_Name_editcontrol1}&nbsp;
+	</td>
+{END Airtime_into_the_Channel__Activator_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_into_the_Channel__pos_type}">
+	{BEGIN Airtime_into_the_Channel__pos_type_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Airtime_into_the_Channel__pos_type}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_into_the_Channel__pos_type_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_into_the_Channel__pos_type}
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__pos_type_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__pos_type_editcontrol1}&nbsp;
+	</td>
+{END Airtime_into_the_Channel__pos_type_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_into_the_Channel__Sales_Into_Channel}">
+	{BEGIN Airtime_into_the_Channel__Sales_Into_Channel_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Airtime_into_the_Channel__Sales_Into_Channel}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_into_the_Channel__Sales_Into_Channel_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_into_the_Channel__Sales_Into_Channel}
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__Sales_Into_Channel_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__Sales_Into_Channel_editcontrol1}&nbsp;
+	</td>
+{END Airtime_into_the_Channel__Sales_Into_Channel_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_into_the_Channel__Total_Amount}">
+	{BEGIN Airtime_into_the_Channel__Total_Amount_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Airtime_into_the_Channel__Total_Amount}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_into_the_Channel__Total_Amount_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_into_the_Channel__Total_Amount}
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__Total_Amount_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__Total_Amount_editcontrol1}&nbsp;
+	</td>
+{END Airtime_into_the_Channel__Total_Amount_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_into_the_Channel__TRANSFER_DATE}">
+	{BEGIN Airtime_into_the_Channel__TRANSFER_DATE_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Airtime_into_the_Channel__TRANSFER_DATE}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_into_the_Channel__TRANSFER_DATE_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_into_the_Channel__TRANSFER_DATE}
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__TRANSFER_DATE_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_into_the_Channel__TRANSFER_DATE_editcontrol1}&nbsp;
+	</td>
+{END Airtime_into_the_Channel__TRANSFER_DATE_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Channel_to_Customers__Outlet_Manager}">
+	{BEGIN Channel_to_Customers__Outlet_Manager_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Channel_to_Customers__Outlet_Manager}
+	</td>
+	<td>
+		<input type="checkbox" {$Channel_to_Customers__Outlet_Manager_notbox}>
+	</td>
+	<td>
+		{$searchtype_Channel_to_Customers__Outlet_Manager}
+	</td>
+	<td>
+		{$Channel_to_Customers__Outlet_Manager_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Channel_to_Customers__Outlet_Manager_editcontrol1}&nbsp;
+	</td>
+{END Channel_to_Customers__Outlet_Manager_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Channel_to_Customers__Outlet_Number}">
+	{BEGIN Channel_to_Customers__Outlet_Number_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Channel_to_Customers__Outlet_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Channel_to_Customers__Outlet_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Channel_to_Customers__Outlet_Number}
+	</td>
+	<td>
+		{$Channel_to_Customers__Outlet_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Channel_to_Customers__Outlet_Number_editcontrol1}&nbsp;
+	</td>
+{END Channel_to_Customers__Outlet_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Channel_to_Customers__Date}">
+	{BEGIN Channel_to_Customers__Date_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Channel_to_Customers__Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Channel_to_Customers__Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Channel_to_Customers__Date}
+	</td>
+	<td>
+		{$Channel_to_Customers__Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Channel_to_Customers__Date_editcontrol1}&nbsp;
+	</td>
+{END Channel_to_Customers__Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Channel_to_Customers__Sales}">
+	{BEGIN Channel_to_Customers__Sales_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Channel_to_Customers__Sales}
+	</td>
+	<td>
+		<input type="checkbox" {$Channel_to_Customers__Sales_notbox}>
+	</td>
+	<td>
+		{$searchtype_Channel_to_Customers__Sales}
+	</td>
+	<td>
+		{$Channel_to_Customers__Sales_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Channel_to_Customers__Sales_editcontrol1}&nbsp;
+	</td>
+{END Channel_to_Customers__Sales_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Channel_to_Customers__Total_Sales}">
+	{BEGIN Channel_to_Customers__Total_Sales_fieldblock}		
+	<td>
+		{$label DSO_Dashboard Channel_to_Customers__Total_Sales}
+	</td>
+	<td>
+		<input type="checkbox" {$Channel_to_Customers__Total_Sales_notbox}>
+	</td>
+	<td>
+		{$searchtype_Channel_to_Customers__Total_Sales}
+	</td>
+	<td>
+		{$Channel_to_Customers__Total_Sales_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Channel_to_Customers__Total_Sales_editcontrol1}&nbsp;
+	</td>
+{END Channel_to_Customers__Total_Sales_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to Dashboard</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

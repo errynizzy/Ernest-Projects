@@ -1,0 +1,156 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Copy of batches</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="rnr-s-grid {$pageStyleName}">	
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Batch_Number_fieldheadercolumn}
+<th class="runner-cc {$Batch_Number_class}" {$Batch_Number_style}>
+	{BEGIN Batch_Number_fieldheader}
+	<b>{$label Copy_of_batches Batch_Number}</b>
+	{END Batch_Number_fieldheader}
+</th>
+{END Batch_Number_fieldheadercolumn}
+	{BEGIN Given_Batch_Number_fieldheadercolumn}
+<th class="runner-cc {$Given_Batch_Number_class}" {$Given_Batch_Number_style}>
+	{BEGIN Given_Batch_Number_fieldheader}
+	<b>{$label Copy_of_batches Given_Batch_Number}</b>
+	{END Given_Batch_Number_fieldheader}
+</th>
+{END Given_Batch_Number_fieldheadercolumn}
+	{BEGIN Batch_size_fieldheadercolumn}
+<th class="runner-cc {$Batch_size_class}" {$Batch_size_style}>
+	{BEGIN Batch_size_fieldheader}
+	<b>{$label Copy_of_batches Batch_size}</b>
+	{END Batch_size_fieldheader}
+</th>
+{END Batch_size_fieldheadercolumn}
+	{BEGIN Status_fieldheadercolumn}
+<th class="runner-cc {$Status_class}" {$Status_style}>
+	{BEGIN Status_fieldheader}
+	<b>{$label Copy_of_batches Status}</b>
+	{END Status_fieldheader}
+</th>
+{END Status_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Batch_Number_fieldcolumn}
+<td  class="runner-cc {$Batch_Number_class}" {$Batch_Number_style}>
+	{$Batch_Number_value}
+</td>
+{END Batch_Number_fieldcolumn}
+	{BEGIN Given_Batch_Number_fieldcolumn}
+<td  class="runner-cc {$Given_Batch_Number_class}" {$Given_Batch_Number_style}>
+	{$Given_Batch_Number_value}
+</td>
+{END Given_Batch_Number_fieldcolumn}
+	{BEGIN Batch_size_fieldcolumn}
+<td  class="runner-cc {$Batch_size_class}" {$Batch_size_style}>
+	{$Batch_size_value}
+</td>
+{END Batch_size_fieldcolumn}
+	{BEGIN Status_fieldcolumn}
+<td  class="runner-cc {$Status_class}" {$Status_style}>
+	{$Status_value}
+</td>
+{END Status_fieldcolumn}
+
+		<td class="rnr-edge">&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+		
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

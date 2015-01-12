@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 10.00.9200.16921"></HEAD> 
+<BODY class="{$stylename} function-dashboard" {$bodyattrs}>{BEGIN body}
+<DIV align="center"></DIV>
+<P align="center"></P>
+<DIV align="center">
+{$header} </DIV>
+<P align="center"></P>
+<DIV align="center" class="rnr-page"></DIV>
+<DIV align="center" class="rnr-top {$blockclass_top}">&nbsp;</DIV>
+{BEGIN container_toplinks}&nbsp;{END container_toplinks}
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks"> 
+{BEGIN security_block}<DIV class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Logged on 
+as&nbsp;<B>
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}>Login</A> 
+</SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="#" {$logoutlink_attrs}>Log out</A> {END logoutbutton}</DIV></DIV>
+{END security_block}{BEGIN asearch_link}<DIV class="style1 rnr-bl rnr-b-toplinks_dashboard_advsearch {$brickclass_toplinks_dashboard_advsearch}"><A class="rnr-button" href="SC_Dashboard_search.php" {$advsearchlink_attrs}>Advanced search</A> </DIV>
+{END asearch_link}<DIV class="rnr-hfiller"></DIV></DIV> 
+{END container_toplinks}
+<DIV align="center" class="rnr-top {$blockclass_top}"></DIV>
+{BEGIN container_hmenu}{END container_hmenu}
+<DIV align="center" class="rnr-top {$blockclass_top}"></DIV>
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+{BEGIN menu_block}{$menu main horizontal}{END menu_block}<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV>
+<DIV class="rnr-hfiller"></DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV></DIV>{END container_hmenu}
+{BEGIN container_hmenu}{END container_hmenu}
+<DIV align="center" class="rnr-top {$blockclass_top}"></DIV>
+{BEGIN container_hmenu}{END container_hmenu}
+<DIV align="center" class="rnr-page"></DIV>
+<DIV align="center" class="rnr-page">
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV align="center">
+<DIV class="rnr-center {$blockclass_center}">
+<DIV align="left"></DIV>
+{BEGIN container_search}
+<DIV class="rnr-c rnr-ch rnr-c-search">
+<DIV 
+class="style1 rnr-bl rnr-b-search_dashboard {$brickclass_search_dashboard}"><SPAN><INPUT type="text" size="25" {$searchfor_attrs}> <A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A> {BEGIN searchform_showall}<A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Show 
+all</A> {END searchform_showall}</SPAN></DIV>
+<DIV class="rnr-hfiller"></DIV></DIV>{END container_search}
+<DIV align="left"></DIV>
+{BEGIN container_dash}
+<TABLE class="rnr-dashboard" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD class="rnr-dbelement" rowspan="1" colspan="1">
+      {$db_Activations_and_Airtime_Transfers_list}</TD>
+    <TD class="rnr-dbelement" rowspan="1" colspan="1">
+      {$db_Registration_Forms_Outstanding___list}</TD></TR>
+  <TR>
+    <TD class="rnr-dbelement" rowspan="1" colspan="2">
+      {$db_Average_Airtime_Consumption_3_Months_list}</TD></TR>
+  <TR>
+    <TD class="rnr-dbelement" rowspan="1" colspan="1">
+      {$db_Active_Freelancers__list}</TD>
+    <TD class="rnr-dbelement" rowspan="1" colspan="1">
+      {$db_Active_Freelancers_per_TL_list}</TD></TR>
+  <TR>
+    <TD class="rnr-dbelement" rowspan="1" colspan="2">
+      {$db_Activations_per_active_FL_list}</TD></TR></TBODY></TABLE>{END container_dash}
+<DIV align="left"></DIV></DIV></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV></DIV>
+<DIV align="center" class="rnr-page"></DIV>
+<DIV align="center" class="rnr-bottom {$blockclass_bottom}"></DIV>
+<DIV align="center" class="rnr-page"></DIV>
+<P align="center"></P>
+<DIV align="center">
+{$footer} </DIV>
+<P align="center"></P>{END body}</BODY></HTML>

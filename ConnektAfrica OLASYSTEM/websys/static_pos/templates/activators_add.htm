@@ -1,0 +1,252 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}<P align=center>
+        {$header}
+	</P>
+      {BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+{BEGIN container_add}<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel activators add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN Activator_Number_fieldblock}<tr class="{$fielddispclass_Activator_Number}" data-fieldname="Activator_Number">
+	<td class="rnr-label">
+		{BEGIN Activator_Number_label}{$label activators Activator_Number}{END Activator_Number_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Number_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Activator_Number_fieldblock}
+	{BEGIN pos_type_fieldblock}<tr class="{$fielddispclass_pos_type}" data-fieldname="pos_type">
+	<td class="rnr-label">
+		{BEGIN pos_type_label}{$label activators pos_type}{END pos_type_label}
+	</td>
+	<td class="rnr-control style3">
+		{$pos_type_editcontrol}&nbsp;
+	</td>
+</tr>
+{END pos_type_fieldblock}
+	{BEGIN Manager_Name_fieldblock}<tr class="{$fielddispclass_Manager_Name}" data-fieldname="Manager_Name">
+	<td class="rnr-label">
+		{BEGIN Manager_Name_label}{$label activators Manager_Name}{END Manager_Name_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Manager_Name_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Manager_Name_fieldblock}
+	{BEGIN Manager_Number_fieldblock}<tr class="{$fielddispclass_Manager_Number}" data-fieldname="Manager_Number">
+	<td class="rnr-label">
+		{BEGIN Manager_Number_label}{$label activators Manager_Number}{END Manager_Number_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Manager_Number_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Manager_Number_fieldblock}
+	{BEGIN Manager_Title_fieldblock}<tr class="{$fielddispclass_Manager_Title}" data-fieldname="Manager_Title">
+	<td class="rnr-label">
+		{BEGIN Manager_Title_label}{$label activators Manager_Title}{END Manager_Title_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Manager_Title_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Manager_Title_fieldblock}
+	{BEGIN Activator_Name_fieldblock}<tr class="{$fielddispclass_Activator_Name}" data-fieldname="Activator_Name">
+	<td class="rnr-label">
+		{BEGIN Activator_Name_label}{$label activators Activator_Name}{END Activator_Name_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Name_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Activator_Name_fieldblock}
+	{BEGIN business_name_fieldblock}<tr class="{$fielddispclass_business_name}" data-fieldname="business_name">
+	<td class="rnr-label">
+		{BEGIN business_name_label}{$label activators business_name}{END business_name_label}
+	</td>
+	<td class="rnr-control style3">
+		{$business_name_editcontrol}&nbsp;
+	</td>
+</tr>
+{END business_name_fieldblock}
+	{BEGIN Area_fieldblock}<tr class="{$fielddispclass_Area}" data-fieldname="Area">
+	<td class="rnr-label">
+		{BEGIN Area_label}{$label activators Area}{END Area_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Area_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Area_fieldblock}
+	{BEGIN Route_fieldblock}<tr class="{$fielddispclass_Route}" data-fieldname="Route">
+	<td class="rnr-label">
+		{BEGIN Route_label}{$label activators Route}{END Route_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Route_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Route_fieldblock}
+	{BEGIN altenative_number_fieldblock}<tr class="{$fielddispclass_altenative_number}" data-fieldname="altenative_number">
+	<td class="rnr-label">
+		{BEGIN altenative_number_label}{$label activators altenative_number}{END altenative_number_label}
+	</td>
+	<td class="rnr-control style3">
+		{$altenative_number_editcontrol}&nbsp;
+	</td>
+</tr>
+{END altenative_number_fieldblock}
+	{BEGIN pos_iccid_fieldblock}<tr class="{$fielddispclass_pos_iccid}" data-fieldname="pos_iccid">
+	<td class="rnr-label">
+		{BEGIN pos_iccid_label}{$label activators pos_iccid}{END pos_iccid_label}
+	</td>
+	<td class="rnr-control style3">
+		{$pos_iccid_editcontrol}&nbsp;
+	</td>
+</tr>
+{END pos_iccid_fieldblock}
+	{BEGIN registration_date_fieldblock}<tr class="{$fielddispclass_registration_date}" data-fieldname="registration_date">
+	<td class="rnr-label">
+		{BEGIN registration_date_label}{$label activators registration_date}{END registration_date_label}
+	</td>
+	<td class="rnr-control style3">
+		{$registration_date_editcontrol}&nbsp;
+	</td>
+</tr>
+{END registration_date_fieldblock}
+	{BEGIN gender_fieldblock}<tr class="{$fielddispclass_gender}" data-fieldname="gender">
+	<td class="rnr-label">
+		{BEGIN gender_label}{$label activators gender}{END gender_label}
+	</td>
+	<td class="rnr-control style3">
+		{$gender_editcontrol}&nbsp;
+	</td>
+</tr>
+{END gender_fieldblock}
+	{BEGIN DOB_fieldblock}<tr class="{$fielddispclass_DOB}" data-fieldname="DOB">
+	<td class="rnr-label">
+		{BEGIN DOB_label}{$label activators DOB}{END DOB_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DOB_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DOB_fieldblock}
+	{BEGIN id_type_fieldblock}<tr class="{$fielddispclass_id_type}" data-fieldname="id_type">
+	<td class="rnr-label">
+		{BEGIN id_type_label}{$label activators id_type}{END id_type_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_type_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_type_fieldblock}
+	{BEGIN id_number_fieldblock}<tr class="{$fielddispclass_id_number}" data-fieldname="id_number">
+	<td class="rnr-label">
+		{BEGIN id_number_label}{$label activators id_number}{END id_number_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_number_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_number_fieldblock}
+	{BEGIN lat_fieldblock}<tr class="{$fielddispclass_lat}" data-fieldname="lat">
+	<td class="rnr-label">
+		{BEGIN lat_label}{$label activators lat}{END lat_label}
+	</td>
+	<td class="rnr-control style3">
+		{$lat_editcontrol}&nbsp;
+	</td>
+</tr>
+{END lat_fieldblock}
+	{BEGIN lon_fieldblock}<tr class="{$fielddispclass_lon}" data-fieldname="lon">
+	<td class="rnr-label">
+		{BEGIN lon_label}{$label activators lon}{END lon_label}
+	</td>
+	<td class="rnr-control style3">
+		{$lon_editcontrol}&nbsp;
+	</td>
+</tr>
+{END lon_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}<a href="#" class="rnr-button main" id="saveButton{$id}">Save</a>
+{END save_button}
+{BEGIN reset_button}<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+{END reset_button}
+{BEGIN cancel_button}<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+<A class="rnr-button main" href="#" {$cancelbutton_attrs}>{END cancel_button}
+{BEGIN back_button}<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+<A class="rnr-button main" href="../activators_list.php">{END back_button}
+{BEGIN backToMenu_button}<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+<A class="rnr-button main" href="../menu.php">{END backToMenu_button}</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+{END container_all}
+
+
+		<DIV class=rnr-page>
+        <div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}">
+        
+      </div>
+		
+		<P align=center>
+        {$footer}
+	</P>
+    {END body}
+	</body>
+</html>

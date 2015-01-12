@@ -1,0 +1,436 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}<div class="rnr-c rnr-cv rnr-c-search">
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	{$pagetitlelabel outside_stock search}
+</span></div>
+
+
+{BEGIN conditions_block}<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<TBODY>
+  <tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Manager_Title}">
+	{BEGIN Manager_Title_fieldblock}<td>
+		{$label outside_stock Manager_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Manager_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Manager_Title}
+	</td>
+	<td>
+		{$Manager_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Manager_Title_editcontrol1}&nbsp;
+	</td>
+{END Manager_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activator_Number}">
+	{BEGIN Activator_Number_fieldblock}<td>
+		{$label outside_stock Activator_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Activator_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activator_Number}
+	</td>
+	<td>
+		{$Activator_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activator_Number_editcontrol1}&nbsp;
+	</td>
+{END Activator_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activator_Name}">
+	{BEGIN Activator_Name_fieldblock}<td>
+		{$label outside_stock Activator_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Activator_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activator_Name}
+	</td>
+	<td>
+		{$Activator_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activator_Name_editcontrol1}&nbsp;
+	</td>
+{END Activator_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Team_Leader}">
+	{BEGIN Team_Leader_fieldblock}<td>
+		{$label outside_stock Team_Leader}
+	</td>
+	<td>
+		<input type="checkbox" {$Team_Leader_notbox}>
+	</td>
+	<td>
+		{$searchtype_Team_Leader}
+	</td>
+	<td>
+		{$Team_Leader_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Team_Leader_editcontrol1}&nbsp;
+	</td>
+{END Team_Leader_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Manager_Name}">
+	{BEGIN Manager_Name_fieldblock}<td>
+		{$label outside_stock Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Manager_Name}
+	</td>
+	<td>
+		{$Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Event_date}">
+	{BEGIN Event_date_fieldblock}<td>
+		{$label outside_stock Event_date}
+	</td>
+	<td>
+		<input type="checkbox" {$Event_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Event_date}
+	</td>
+	<td>
+		{$Event_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Event_date_editcontrol1}&nbsp;
+	</td>
+{END Event_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_time}">
+	{BEGIN time_fieldblock}<td>
+		{$label outside_stock time}
+	</td>
+	<td>
+		<input type="checkbox" {$time_notbox}>
+	</td>
+	<td>
+		{$searchtype_time}
+	</td>
+	<td>
+		{$time_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$time_editcontrol1}&nbsp;
+	</td>
+{END time_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Status}">
+	{BEGIN Status_fieldblock}<td>
+		{$label outside_stock Status}
+	</td>
+	<td>
+		<input type="checkbox" {$Status_notbox}>
+	</td>
+	<td>
+		{$searchtype_Status}
+	</td>
+	<td>
+		{$Status_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Status_editcontrol1}&nbsp;
+	</td>
+{END Status_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ICCID}">
+	{BEGIN ICCID_fieldblock}<td>
+		{$label outside_stock ICCID}
+	</td>
+	<td>
+		<input type="checkbox" {$ICCID_notbox}>
+	</td>
+	<td>
+		{$searchtype_ICCID}
+	</td>
+	<td>
+		{$ICCID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ICCID_editcontrol1}&nbsp;
+	</td>
+{END ICCID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_MSISDN}">
+	{BEGIN Active_MSISDN_fieldblock}<td>
+		{$label outside_stock Active_MSISDN}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_MSISDN_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_MSISDN}
+	</td>
+	<td>
+		{$Active_MSISDN_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_MSISDN_editcontrol1}&nbsp;
+	</td>
+{END Active_MSISDN_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_New_MSISDN}">
+	{BEGIN New_MSISDN_fieldblock}<td>
+		{$label outside_stock New_MSISDN}
+	</td>
+	<td>
+		<input type="checkbox" {$New_MSISDN_notbox}>
+	</td>
+	<td>
+		{$searchtype_New_MSISDN}
+	</td>
+	<td>
+		{$New_MSISDN_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$New_MSISDN_editcontrol1}&nbsp;
+	</td>
+{END New_MSISDN_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Swap_Date}">
+	{BEGIN Swap_Date_fieldblock}<td>
+		{$label outside_stock Swap_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Swap_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Swap_Date}
+	</td>
+	<td>
+		{$Swap_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Swap_Date_editcontrol1}&nbsp;
+	</td>
+{END Swap_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_transered}">
+	{BEGIN Airtime_transered_fieldblock}<td>
+		{$label outside_stock Airtime_transered}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_transered_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_transered}
+	</td>
+	<td>
+		{$Airtime_transered_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_transered_editcontrol1}&nbsp;
+	</td>
+{END Airtime_transered_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Transfer_date}">
+	{BEGIN Transfer_date_fieldblock}<td>
+		{$label outside_stock Transfer_date}
+	</td>
+	<td>
+		<input type="checkbox" {$Transfer_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Transfer_date}
+	</td>
+	<td>
+		{$Transfer_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Transfer_date_editcontrol1}&nbsp;
+	</td>
+{END Transfer_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activation_Commission}">
+	{BEGIN Activation_Commission_fieldblock}<td>
+		{$label outside_stock Activation_Commission}
+	</td>
+	<td>
+		<input type="checkbox" {$Activation_Commission_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activation_Commission}
+	</td>
+	<td>
+		{$Activation_Commission_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activation_Commission_editcontrol1}&nbsp;
+	</td>
+{END Activation_Commission_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Returned}">
+	{BEGIN Form_Returned_fieldblock}<td>
+		{$label outside_stock Form_Returned}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Returned_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Returned}
+	</td>
+	<td>
+		{$Form_Returned_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Returned_editcontrol1}&nbsp;
+	</td>
+{END Form_Returned_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Status}">
+	{BEGIN Form_Status_fieldblock}<td>
+		{$label outside_stock Form_Status}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Status_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Status}
+	</td>
+	<td>
+		{$Form_Status_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Status_editcontrol1}&nbsp;
+	</td>
+{END Form_Status_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Commission}">
+	{BEGIN Form_Commission_fieldblock}<td>
+		{$label outside_stock Form_Commission}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Commission_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Commission}
+	</td>
+	<td>
+		{$Form_Commission_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Commission_editcontrol1}&nbsp;
+	</td>
+{END Form_Commission_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Paid_Date}">
+	{BEGIN Form_Paid_Date_fieldblock}<td>
+		{$label outside_stock Form_Paid_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Paid_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Paid_Date}
+	</td>
+	<td>
+		{$Form_Paid_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Paid_Date_editcontrol1}&nbsp;
+	</td>
+{END Form_Paid_Date_fieldblock}
+	</tr>
+
+</TBODY></table></div>
+
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV 
+class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

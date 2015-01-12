@@ -1,0 +1,236 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel Activations_per_active_FL print}</h1>
+</div>
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Activator_Number_fieldheadercolumn}
+<th class="runner-cc {$Activator_Number_class}" {$Activator_Number_style}>
+	{BEGIN Activator_Number_fieldheader}
+	<b>{$label Activations_per_active_FL Activator_Number}</b>
+	{END Activator_Number_fieldheader}
+</th>
+{END Activator_Number_fieldheadercolumn}
+	{BEGIN Activator_Name_fieldheadercolumn}
+<th class="runner-cc {$Activator_Name_class}" {$Activator_Name_style}>
+	{BEGIN Activator_Name_fieldheader}
+	<b>{$label Activations_per_active_FL Activator_Name}</b>
+	{END Activator_Name_fieldheader}
+</th>
+{END Activator_Name_fieldheadercolumn}
+	{BEGIN Manager_Name_fieldheadercolumn}
+<th class="runner-cc {$Manager_Name_class}" {$Manager_Name_style}>
+	{BEGIN Manager_Name_fieldheader}
+	<b>{$label Activations_per_active_FL Manager_Name}</b>
+	{END Manager_Name_fieldheader}
+</th>
+{END Manager_Name_fieldheadercolumn}
+	{BEGIN Manager_Title_fieldheadercolumn}
+<th class="runner-cc {$Manager_Title_class}" {$Manager_Title_style}>
+	{BEGIN Manager_Title_fieldheader}
+	<b>{$label Activations_per_active_FL Manager_Title}</b>
+	{END Manager_Title_fieldheader}
+</th>
+{END Manager_Title_fieldheadercolumn}
+	{BEGIN Date_fieldheadercolumn}
+<th class="runner-cc {$Date_class}" {$Date_style}>
+	{BEGIN Date_fieldheader}
+	<b>{$label Activations_per_active_FL Date}</b>
+	{END Date_fieldheader}
+</th>
+{END Date_fieldheadercolumn}
+	{BEGIN Activations_fieldheadercolumn}
+<th class="runner-cc {$Activations_class}" {$Activations_style}>
+	{BEGIN Activations_fieldheader}
+	<b>{$label Activations_per_active_FL Activations}</b>
+	{END Activations_fieldheader}
+</th>
+{END Activations_fieldheadercolumn}
+	{BEGIN With_Airtime_fieldheadercolumn}
+<th class="runner-cc {$With_Airtime_class}" {$With_Airtime_style}>
+	{BEGIN With_Airtime_fieldheader}
+	<b>{$label Activations_per_active_FL With_Airtime}</b>
+	{END With_Airtime_fieldheader}
+</th>
+{END With_Airtime_fieldheadercolumn}
+	{BEGIN No_Airtime_fieldheadercolumn}
+<th class="runner-cc {$No_Airtime_class}" {$No_Airtime_style}>
+	{BEGIN No_Airtime_fieldheader}
+	<b>{$label Activations_per_active_FL No_Airtime}</b>
+	{END No_Airtime_fieldheader}
+</th>
+{END No_Airtime_fieldheadercolumn}
+	{BEGIN Percent_fieldheadercolumn}
+<th class="runner-cc {$Percent_class}" {$Percent_style}>
+	{BEGIN Percent_fieldheader}
+	<b>{$label Activations_per_active_FL Percent}</b>
+	{END Percent_fieldheader}
+</th>
+{END Percent_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Activator_Number_fieldcolumn}
+<td  class="runner-cc {$Activator_Number_class}" {$Activator_Number_style} {$recordattrs}>
+	{$Activator_Number_value}
+</td>
+{END Activator_Number_fieldcolumn}
+	{BEGIN Activator_Name_fieldcolumn}
+<td  class="runner-cc {$Activator_Name_class}" {$Activator_Name_style} {$recordattrs}>
+	{$Activator_Name_value}
+</td>
+{END Activator_Name_fieldcolumn}
+	{BEGIN Manager_Name_fieldcolumn}
+<td  class="runner-cc {$Manager_Name_class}" {$Manager_Name_style} {$recordattrs}>
+	{$Manager_Name_value}
+</td>
+{END Manager_Name_fieldcolumn}
+	{BEGIN Manager_Title_fieldcolumn}
+<td  class="runner-cc {$Manager_Title_class}" {$Manager_Title_style} {$recordattrs}>
+	{$Manager_Title_value}
+</td>
+{END Manager_Title_fieldcolumn}
+	{BEGIN Date_fieldcolumn}
+<td  class="runner-cc {$Date_class}" {$Date_style} {$recordattrs}>
+	{$Date_value}
+</td>
+{END Date_fieldcolumn}
+	{BEGIN Activations_fieldcolumn}
+<td  class="runner-cc {$Activations_class}" {$Activations_style} {$recordattrs}>
+	{$Activations_value}
+</td>
+{END Activations_fieldcolumn}
+	{BEGIN With_Airtime_fieldcolumn}
+<td  class="runner-cc {$With_Airtime_class}" {$With_Airtime_style} {$recordattrs}>
+	{$With_Airtime_value}
+</td>
+{END With_Airtime_fieldcolumn}
+	{BEGIN No_Airtime_fieldcolumn}
+<td  class="runner-cc {$No_Airtime_class}" {$No_Airtime_style} {$recordattrs}>
+	{$No_Airtime_value}
+</td>
+{END No_Airtime_fieldcolumn}
+	{BEGIN Percent_fieldcolumn}
+<td  class="runner-cc {$Percent_class}" {$Percent_style} {$recordattrs}>
+	{$Percent_value}
+</td>
+{END Percent_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

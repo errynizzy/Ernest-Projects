@@ -1,0 +1,863 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel SC_Dashboard search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Manager_Name}">
+	{BEGIN Registration_Forms_Outstanding___Manager_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Manager_Name}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Manager_Title}">
+	{BEGIN Registration_Forms_Outstanding___Manager_Title_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Manager_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Manager_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Manager_Title}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Manager_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Manager_Title_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Manager_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Event_date}">
+	{BEGIN Registration_Forms_Outstanding___Event_date_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Event_date}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Event_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Event_date}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Event_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Event_date_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Event_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Activations}">
+	{BEGIN Registration_Forms_Outstanding___Activations_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Activations}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Activations_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Activations}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Activations_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Activations_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Activations_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Returned}">
+	{BEGIN Registration_Forms_Outstanding___Returned_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Returned}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Returned_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Returned}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Returned_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Returned_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Returned_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Missing}">
+	{BEGIN Registration_Forms_Outstanding___Missing_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Missing}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Missing_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Missing}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Missing_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Missing_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Missing_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Registration_Forms_Outstanding___Percent}">
+	{BEGIN Registration_Forms_Outstanding___Percent_fieldblock}		
+	<td>
+		{$label SC_Dashboard Registration_Forms_Outstanding___Percent}
+	</td>
+	<td>
+		<input type="checkbox" {$Registration_Forms_Outstanding___Percent_notbox}>
+	</td>
+	<td>
+		{$searchtype_Registration_Forms_Outstanding___Percent}
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Percent_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Registration_Forms_Outstanding___Percent_editcontrol1}&nbsp;
+	</td>
+{END Registration_Forms_Outstanding___Percent_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Activator_Number}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Activator_Number_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Activator_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Activator_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Activator_Number}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Activator_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Activator_Number_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Activator_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Activator_Name}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Activator_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Activator_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Activator_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Activator_Name}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Activator_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Activator_Name_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Activator_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Manager_Name}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Manager_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Manager_Name}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Title}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Title_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Title}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Title_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Subscriber_Number}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Subscriber_Number_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Subscriber_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Subscriber_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Subscriber_Number}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Subscriber_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Subscriber_Number_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Subscriber_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Date_Activated}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Date_Activated_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Date_Activated}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Date_Activated_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Date_Activated}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Date_Activated_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Date_Activated_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Date_Activated_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_Consumption}">
+	{BEGIN Average_Airtime_Consumption_3_Months_Consumption_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_Consumption}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_Consumption_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_Consumption}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Consumption_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_Consumption_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_Consumption_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Average_Airtime_Consumption_3_Months_End_of_3_Month}">
+	{BEGIN Average_Airtime_Consumption_3_Months_End_of_3_Month_fieldblock}		
+	<td>
+		{$label SC_Dashboard Average_Airtime_Consumption_3_Months_End_of_3_Month}
+	</td>
+	<td>
+		<input type="checkbox" {$Average_Airtime_Consumption_3_Months_End_of_3_Month_notbox}>
+	</td>
+	<td>
+		{$searchtype_Average_Airtime_Consumption_3_Months_End_of_3_Month}
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_End_of_3_Month_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Average_Airtime_Consumption_3_Months_End_of_3_Month_editcontrol1}&nbsp;
+	</td>
+{END Average_Airtime_Consumption_3_Months_End_of_3_Month_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers__Manager_Name}">
+	{BEGIN Active_Freelancers__Manager_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers__Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers__Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers__Manager_Name}
+	</td>
+	<td>
+		{$Active_Freelancers__Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers__Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers__Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers__Title}">
+	{BEGIN Active_Freelancers__Title_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers__Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers__Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers__Title}
+	</td>
+	<td>
+		{$Active_Freelancers__Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers__Title_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers__Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers__Date}">
+	{BEGIN Active_Freelancers__Date_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers__Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers__Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers__Date}
+	</td>
+	<td>
+		{$Active_Freelancers__Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers__Date_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers__Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers__Active_FL}">
+	{BEGIN Active_Freelancers__Active_FL_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers__Active_FL}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers__Active_FL_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers__Active_FL}
+	</td>
+	<td>
+		{$Active_Freelancers__Active_FL_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers__Active_FL_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers__Active_FL_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers_per_TL_Team_Leader}">
+	{BEGIN Active_Freelancers_per_TL_Team_Leader_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers_per_TL_Team_Leader}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers_per_TL_Team_Leader_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers_per_TL_Team_Leader}
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Team_Leader_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Team_Leader_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers_per_TL_Team_Leader_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers_per_TL_Manager_Name}">
+	{BEGIN Active_Freelancers_per_TL_Manager_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers_per_TL_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers_per_TL_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers_per_TL_Manager_Name}
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers_per_TL_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers_per_TL_Title}">
+	{BEGIN Active_Freelancers_per_TL_Title_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers_per_TL_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers_per_TL_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers_per_TL_Title}
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Title_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers_per_TL_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers_per_TL_Date}">
+	{BEGIN Active_Freelancers_per_TL_Date_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers_per_TL_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers_per_TL_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers_per_TL_Date}
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Date_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers_per_TL_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_Freelancers_per_TL_Active_FL}">
+	{BEGIN Active_Freelancers_per_TL_Active_FL_fieldblock}		
+	<td>
+		{$label SC_Dashboard Active_Freelancers_per_TL_Active_FL}
+	</td>
+	<td>
+		<input type="checkbox" {$Active_Freelancers_per_TL_Active_FL_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_Freelancers_per_TL_Active_FL}
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Active_FL_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_Freelancers_per_TL_Active_FL_editcontrol1}&nbsp;
+	</td>
+{END Active_Freelancers_per_TL_Active_FL_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Activator_Number}">
+	{BEGIN Activations_per_active_FL_Activator_Number_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Activator_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Activator_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Activator_Number}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Activator_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Activator_Number_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Activator_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Activator_Name}">
+	{BEGIN Activations_per_active_FL_Activator_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Activator_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Activator_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Activator_Name}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Activator_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Activator_Name_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Activator_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Manager_Name}">
+	{BEGIN Activations_per_active_FL_Manager_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Manager_Name}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Manager_Title}">
+	{BEGIN Activations_per_active_FL_Manager_Title_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Manager_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Manager_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Manager_Title}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Manager_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Manager_Title_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Manager_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Date}">
+	{BEGIN Activations_per_active_FL_Date_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Date}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Date_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Activations}">
+	{BEGIN Activations_per_active_FL_Activations_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Activations}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Activations_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Activations}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Activations_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Activations_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Activations_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_With_Airtime}">
+	{BEGIN Activations_per_active_FL_With_Airtime_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_With_Airtime}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_With_Airtime_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_With_Airtime}
+	</td>
+	<td>
+		{$Activations_per_active_FL_With_Airtime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_With_Airtime_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_With_Airtime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_No_Airtime}">
+	{BEGIN Activations_per_active_FL_No_Airtime_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_No_Airtime}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_No_Airtime_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_No_Airtime}
+	</td>
+	<td>
+		{$Activations_per_active_FL_No_Airtime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_No_Airtime_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_No_Airtime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_per_active_FL_Percent}">
+	{BEGIN Activations_per_active_FL_Percent_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_per_active_FL_Percent}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_per_active_FL_Percent_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_per_active_FL_Percent}
+	</td>
+	<td>
+		{$Activations_per_active_FL_Percent_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_per_active_FL_Percent_editcontrol1}&nbsp;
+	</td>
+{END Activations_per_active_FL_Percent_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_Manager_Name}">
+	{BEGIN Activations_and_Airtime_Transfers_Manager_Name_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_Manager_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_Manager_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_Manager_Name}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Manager_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Manager_Name_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_Manager_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_Title}">
+	{BEGIN Activations_and_Airtime_Transfers_Title_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_Title}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Title_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_A_Date}">
+	{BEGIN Activations_and_Airtime_Transfers_A_Date_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_A_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_A_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_A_Date}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_A_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_A_Date_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_A_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_Total_Activations}">
+	{BEGIN Activations_and_Airtime_Transfers_Total_Activations_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_Total_Activations}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_Total_Activations_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_Total_Activations}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Total_Activations_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Total_Activations_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_Total_Activations_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_With_Airtime}">
+	{BEGIN Activations_and_Airtime_Transfers_With_Airtime_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_With_Airtime}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_With_Airtime_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_With_Airtime}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_With_Airtime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_With_Airtime_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_With_Airtime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_No_Airtime}">
+	{BEGIN Activations_and_Airtime_Transfers_No_Airtime_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_No_Airtime}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_No_Airtime_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_No_Airtime}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_No_Airtime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_No_Airtime_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_No_Airtime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activations_and_Airtime_Transfers_Percent}">
+	{BEGIN Activations_and_Airtime_Transfers_Percent_fieldblock}		
+	<td>
+		{$label SC_Dashboard Activations_and_Airtime_Transfers_Percent}
+	</td>
+	<td>
+		<input type="checkbox" {$Activations_and_Airtime_Transfers_Percent_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activations_and_Airtime_Transfers_Percent}
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Percent_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activations_and_Airtime_Transfers_Percent_editcontrol1}&nbsp;
+	</td>
+{END Activations_and_Airtime_Transfers_Percent_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to Dashboard</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

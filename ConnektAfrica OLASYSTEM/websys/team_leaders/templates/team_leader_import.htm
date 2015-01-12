@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY class="{$stylename} function-import" {$bodyattrs}>{BEGIN body}
+<P align=center>{$header} </P>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_import}
+<DIV class="rnr-c rnr-cv rnr-c-import">
+<DIV 
+class="rnr-brickcontents style2 rnr-b-importheader {$brickclass_importheader}"><SPAN>{$pagetitlelabel team_leader import} </SPAN></DIV>
+<DIV 
+class="rnr-brickcontents style1 rnr-b-errormessage {$brickclass_errormessage}">{$error_message}</DIV>
+<DIV 
+class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_importfields} rnr-wrapper rnr-cbw-importfields">
+{BEGIN container_importfields}
+<DIV class="rnr-c rnr-cv rnr-c-importfields">
+<DIV 
+class="rnr-brickcontents style1 rnr-b-importfields {$brickclass_importfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  <TR>
+    <TD>Select file with data. </TD>
+    <TD><INPUT type=file {$importfile_attrs}> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV 
+class="rnr-brickcontents style1 rnr-b-importheader_text {$brickclass_importheader_text}">Browse 
+to the comma-separated (.csv) or to the Excel (.xls) file that you wish to 
+import.<BR>The first line in the file should contain the field names. </DIV>
+<DIV 
+class="rnr-brickcontents style2 rnr-b-importbuttons {$brickclass_importbuttons}"><A class="rnr-button main" href="#" {$importlink_attrs}>Import</A> <A class=rnr-button href="#" {$backtolist_attrs}>Back to list</A> 
+</DIV></DIV>{END container_importfields}</DIV></DIV>{END container_import}</DIV>
+<DIV class=rnr-page>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV>
+<P align=center>{$footer} 
+</P>{END body}</BODY></HTML>

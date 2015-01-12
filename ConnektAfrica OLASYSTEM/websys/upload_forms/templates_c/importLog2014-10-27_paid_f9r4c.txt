@@ -1,0 +1,78 @@
+Import into paid
+10/27/2014 10:13:10 AM
+
+63 out of 87 records processed successfully.
+63 records added.
+0 records updated.
+24 records processed with errors:
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'
+
+
+Duplicate entry '' for key 'PRIMARY'

@@ -1,0 +1,109 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	{$pagetitlelabel simcards add}
+</span></div>{END addheader}
+
+
+{BEGIN message_block}<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<TBODY>
+  <tr>
+<td>
+	{BEGIN supplier_name_fieldblock}<div data-fieldname="supplier_name" class="rnr-field style1 {$fielddispclass_supplier_name}">
+  <span class="rnr-label">{BEGIN supplier_name_label}{$label simcards supplier_name}{END supplier_name_label}</span>
+  <span class="rnr-control style3">{$supplier_name_editcontrol}</span>
+</div>
+{END supplier_name_fieldblock}
+	{BEGIN supplier_number_fieldblock}<div data-fieldname="supplier_number" class="rnr-field style1 {$fielddispclass_supplier_number}">
+  <span class="rnr-label">{BEGIN supplier_number_label}{$label simcards supplier_number}{END supplier_number_label}</span>
+  <span class="rnr-control style3">{$supplier_number_editcontrol}</span>
+</div>
+{END supplier_number_fieldblock}
+	{BEGIN batch_number_fieldblock}<div data-fieldname="batch_number" class="rnr-field style1 {$fielddispclass_batch_number}">
+  <span class="rnr-label">{BEGIN batch_number_label}{$label simcards batch_number}{END batch_number_label}</span>
+  <span class="rnr-control style3">{$batch_number_editcontrol}</span>
+</div>
+{END batch_number_fieldblock}
+</td>
+<td>
+	{BEGIN batch_size_fieldblock}<div data-fieldname="batch_size" class="rnr-field style1 {$fielddispclass_batch_size}">
+  <span class="rnr-label">{BEGIN batch_size_label}{$label simcards batch_size}{END batch_size_label}</span>
+  <span class="rnr-control style3">{$batch_size_editcontrol}</span>
+</div>
+{END batch_size_fieldblock}
+	{BEGIN Date_fieldblock}<div data-fieldname="Date" class="rnr-field style1 {$fielddispclass_Date}">
+  <span class="rnr-label">{BEGIN Date_label}{$label simcards Date}{END Date_label}</span>
+  <span class="rnr-control style3">{$Date_editcontrol}</span>
+</div>
+{END Date_fieldblock}
+</td>
+</tr>
+</TBODY></table></div>
+
+
+{BEGIN addbuttons}<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN cancel_button}<a href="#" class="rnr-button" {$cancelbutton_attrs}>Cancel</a>
+{END cancel_button}
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN backToMenu_button}<a href="#" class="rnr-button" {$backToMenubutton_attrs}>Back to menu</a>
+{END backToMenu_button}</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+{END container_all}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

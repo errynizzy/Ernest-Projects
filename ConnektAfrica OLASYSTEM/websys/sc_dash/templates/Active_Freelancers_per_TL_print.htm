@@ -1,0 +1,188 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel Active_Freelancers_per_TL print}</h1>
+</div>
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Team_Leader_fieldheadercolumn}
+<th class="runner-cc {$Team_Leader_class}" {$Team_Leader_style}>
+	{BEGIN Team_Leader_fieldheader}
+	<b>{$label Active_Freelancers_per_TL Team_Leader}</b>
+	{END Team_Leader_fieldheader}
+</th>
+{END Team_Leader_fieldheadercolumn}
+	{BEGIN Manager_Name_fieldheadercolumn}
+<th class="runner-cc {$Manager_Name_class}" {$Manager_Name_style}>
+	{BEGIN Manager_Name_fieldheader}
+	<b>{$label Active_Freelancers_per_TL Manager_Name}</b>
+	{END Manager_Name_fieldheader}
+</th>
+{END Manager_Name_fieldheadercolumn}
+	{BEGIN Title_fieldheadercolumn}
+<th class="runner-cc {$Title_class}" {$Title_style}>
+	{BEGIN Title_fieldheader}
+	<b>{$label Active_Freelancers_per_TL Title}</b>
+	{END Title_fieldheader}
+</th>
+{END Title_fieldheadercolumn}
+	{BEGIN Date_fieldheadercolumn}
+<th class="runner-cc {$Date_class}" {$Date_style}>
+	{BEGIN Date_fieldheader}
+	<b>{$label Active_Freelancers_per_TL Date}</b>
+	{END Date_fieldheader}
+</th>
+{END Date_fieldheadercolumn}
+	{BEGIN Active_FL_fieldheadercolumn}
+<th class="runner-cc {$Active_FL_class}" {$Active_FL_style}>
+	{BEGIN Active_FL_fieldheader}
+	<b>{$label Active_Freelancers_per_TL Active_FL}</b>
+	{END Active_FL_fieldheader}
+</th>
+{END Active_FL_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Team_Leader_fieldcolumn}
+<td  class="runner-cc {$Team_Leader_class}" {$Team_Leader_style} {$recordattrs}>
+	{$Team_Leader_value}
+</td>
+{END Team_Leader_fieldcolumn}
+	{BEGIN Manager_Name_fieldcolumn}
+<td  class="runner-cc {$Manager_Name_class}" {$Manager_Name_style} {$recordattrs}>
+	{$Manager_Name_value}
+</td>
+{END Manager_Name_fieldcolumn}
+	{BEGIN Title_fieldcolumn}
+<td  class="runner-cc {$Title_class}" {$Title_style} {$recordattrs}>
+	{$Title_value}
+</td>
+{END Title_fieldcolumn}
+	{BEGIN Date_fieldcolumn}
+<td  class="runner-cc {$Date_class}" {$Date_style} {$recordattrs}>
+	{$Date_value}
+</td>
+{END Date_fieldcolumn}
+	{BEGIN Active_FL_fieldcolumn}
+<td  class="runner-cc {$Active_FL_class}" {$Active_FL_style} {$recordattrs}>
+	{$Active_FL_value}
+</td>
+{END Active_FL_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

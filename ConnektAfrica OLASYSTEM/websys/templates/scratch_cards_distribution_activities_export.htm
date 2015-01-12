@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY class="{$stylename} function-export" {$bodyattrs}>{BEGIN body}
+{$header} 
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_export}
+<DIV class="rnr-c rnr-cv rnr-c-export">
+<DIV 
+class="rnr-brickcontents style2 rnr-b-exportheader {$brickclass_exportheader}"><SPAN>{$pagetitlelabel scratch_cards_distribution_activities export} </SPAN></DIV>
+<DIV 
+class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_range} rnr-wrapper rnr-cbw-range">
+{BEGIN container_range}
+<DIV class="rnr-c rnr-cv rnr-c-range">
+{BEGIN range_block}<DIV class="rnr-brickcontents style1 rnr-b-exprange {$brickclass_exprange}">
+<DIV class="rnr-field style2">Data range </DIV>
+<DIV class="rnr-field style1"><SPAN class=rnr-hoption><INPUT class=rnr-radio-button value=all CHECKED type=radio name=records {$allpageradio_attrs}> <SPAN class=rnr-radio-label>All 
+records</SPAN>&nbsp;&nbsp; </SPAN><SPAN class=rnr-hoption><INPUT class=rnr-radio-button value=page type=radio name=records {$pageradio_attrs}> <SPAN class=rnr-radio-label>Current page 
+only</SPAN> </SPAN></DIV></DIV>{END range_block}</DIV>{END container_range}</DIV>
+<DIV 
+class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-expoutput {$brickclass_expoutput}">
+<DIV class="rnr-field style2">Output format </DIV>
+{BEGIN groupExcel}<DIV class="rnr-field style1"><INPUT class=rnr-radio-button value=excel2007 CHECKED type=radio name=type {$excelradio_attrs}><SPAN class=rnr-radio-label> <IMG alt=" " align=absMiddle src="images/excel.gif">&nbsp;Excel 2007</SPAN> </DIV>
+<DIV class="rnr-field style1"><INPUT class=rnr-radio-button value=excel5 type=radio name=type {$excelradio_attrs}><SPAN class=rnr-radio-label> <IMG alt=" " align=absMiddle src="images/excel.gif">&nbsp;Excel 5</SPAN> </DIV>
+{END groupExcel}<DIV class="rnr-field style1"><INPUT class=rnr-radio-button value=word type=radio name=type {$wordradio_attrs}><SPAN 
+class=rnr-radio-label> <IMG alt=" " align=absMiddle src="images/word.gif">&nbsp;Word</SPAN><SPAN 
+class=rnr-radio-label></SPAN></DIV></DIV></DIV>{END container_fields}</DIV>
+<DIV 
+class="rnr-brickcontents style2 rnr-b-expbuttons {$brickclass_expbuttons}"><A class="rnr-button main" href="#" {$exportlink_attrs}>Export</A> </DIV></DIV>{END container_export}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV 
+class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>{$footer}{END body} 
+</BODY></HTML>

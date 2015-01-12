@@ -1,0 +1,267 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	{$pagetitlelabel outside_stock view}
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN Manager_Title_fieldblock}<tr class="{$fielddispclass_Manager_Title}" data-fieldname="Manager_Title">
+	<td class="rnr-label">
+		{$label outside_stock Manager_Title}
+	</td>
+	<td class="rnr-control style3">
+		{$Manager_Title_value}&nbsp;
+	</td>
+</tr>
+{END Manager_Title_fieldblock}
+	{BEGIN Activator_Number_fieldblock}<tr class="{$fielddispclass_Activator_Number}" data-fieldname="Activator_Number">
+	<td class="rnr-label">
+		{$label outside_stock Activator_Number}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Number_value}&nbsp;
+	</td>
+</tr>
+{END Activator_Number_fieldblock}
+	{BEGIN Activator_Name_fieldblock}<tr class="{$fielddispclass_Activator_Name}" data-fieldname="Activator_Name">
+	<td class="rnr-label">
+		{$label outside_stock Activator_Name}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Name_value}&nbsp;
+	</td>
+</tr>
+{END Activator_Name_fieldblock}
+	{BEGIN Team_Leader_fieldblock}<tr class="{$fielddispclass_Team_Leader}" data-fieldname="Team_Leader">
+	<td class="rnr-label">
+		{$label outside_stock Team_Leader}
+	</td>
+	<td class="rnr-control style3">
+		{$Team_Leader_value}&nbsp;
+	</td>
+</tr>
+{END Team_Leader_fieldblock}
+	{BEGIN Manager_Name_fieldblock}<tr class="{$fielddispclass_Manager_Name}" data-fieldname="Manager_Name">
+	<td class="rnr-label">
+		{$label outside_stock Manager_Name}
+	</td>
+	<td class="rnr-control style3">
+		{$Manager_Name_value}&nbsp;
+	</td>
+</tr>
+{END Manager_Name_fieldblock}
+	{BEGIN Event_date_fieldblock}<tr class="{$fielddispclass_Event_date}" data-fieldname="Event_date">
+	<td class="rnr-label">
+		{$label outside_stock Event_date}
+	</td>
+	<td class="rnr-control style3">
+		{$Event_date_value}&nbsp;
+	</td>
+</tr>
+{END Event_date_fieldblock}
+	{BEGIN time_fieldblock}<tr class="{$fielddispclass_time}" data-fieldname="time">
+	<td class="rnr-label">
+		{$label outside_stock time}
+	</td>
+	<td class="rnr-control style3">
+		{$time_value}&nbsp;
+	</td>
+</tr>
+{END time_fieldblock}
+	{BEGIN Status_fieldblock}<tr class="{$fielddispclass_Status}" data-fieldname="Status">
+	<td class="rnr-label">
+		{$label outside_stock Status}
+	</td>
+	<td class="rnr-control style3">
+		{$Status_value}&nbsp;
+	</td>
+</tr>
+{END Status_fieldblock}
+	{BEGIN ICCID_fieldblock}<tr class="{$fielddispclass_ICCID}" data-fieldname="ICCID">
+	<td class="rnr-label">
+		{$label outside_stock ICCID}
+	</td>
+	<td class="rnr-control style3">
+		{$ICCID_value}&nbsp;
+	</td>
+</tr>
+{END ICCID_fieldblock}
+	{BEGIN Active_MSISDN_fieldblock}<tr class="{$fielddispclass_Active_MSISDN}" data-fieldname="Active_MSISDN">
+	<td class="rnr-label">
+		{$label outside_stock Active_MSISDN}
+	</td>
+	<td class="rnr-control style3">
+		{$Active_MSISDN_value}&nbsp;
+	</td>
+</tr>
+{END Active_MSISDN_fieldblock}
+	{BEGIN New_MSISDN_fieldblock}<tr class="{$fielddispclass_New_MSISDN}" data-fieldname="New_MSISDN">
+	<td class="rnr-label">
+		{$label outside_stock New_MSISDN}
+	</td>
+	<td class="rnr-control style3">
+		{$New_MSISDN_value}&nbsp;
+	</td>
+</tr>
+{END New_MSISDN_fieldblock}
+	{BEGIN Swap_Date_fieldblock}<tr class="{$fielddispclass_Swap_Date}" data-fieldname="Swap_Date">
+	<td class="rnr-label">
+		{$label outside_stock Swap_Date}
+	</td>
+	<td class="rnr-control style3">
+		{$Swap_Date_value}&nbsp;
+	</td>
+</tr>
+{END Swap_Date_fieldblock}
+	{BEGIN Airtime_transered_fieldblock}<tr class="{$fielddispclass_Airtime_transered}" data-fieldname="Airtime_transered">
+	<td class="rnr-label">
+		{$label outside_stock Airtime_transered}
+	</td>
+	<td class="rnr-control style3">
+		{$Airtime_transered_value}&nbsp;
+	</td>
+</tr>
+{END Airtime_transered_fieldblock}
+	{BEGIN Transfer_date_fieldblock}<tr class="{$fielddispclass_Transfer_date}" data-fieldname="Transfer_date">
+	<td class="rnr-label">
+		{$label outside_stock Transfer_date}
+	</td>
+	<td class="rnr-control style3">
+		{$Transfer_date_value}&nbsp;
+	</td>
+</tr>
+{END Transfer_date_fieldblock}
+	{BEGIN Activation_Commission_fieldblock}<tr class="{$fielddispclass_Activation_Commission}" data-fieldname="Activation_Commission">
+	<td class="rnr-label">
+		{$label outside_stock Activation_Commission}
+	</td>
+	<td class="rnr-control style3">
+		{$Activation_Commission_value}&nbsp;
+	</td>
+</tr>
+{END Activation_Commission_fieldblock}
+	{BEGIN Form_Returned_fieldblock}<tr class="{$fielddispclass_Form_Returned}" data-fieldname="Form_Returned">
+	<td class="rnr-label">
+		{$label outside_stock Form_Returned}
+	</td>
+	<td class="rnr-control style3">
+		{$Form_Returned_value}&nbsp;
+	</td>
+</tr>
+{END Form_Returned_fieldblock}
+	{BEGIN Form_Status_fieldblock}<tr class="{$fielddispclass_Form_Status}" data-fieldname="Form_Status">
+	<td class="rnr-label">
+		{$label outside_stock Form_Status}
+	</td>
+	<td class="rnr-control style3">
+		{$Form_Status_value}&nbsp;
+	</td>
+</tr>
+{END Form_Status_fieldblock}
+	{BEGIN Form_Commission_fieldblock}<tr class="{$fielddispclass_Form_Commission}" data-fieldname="Form_Commission">
+	<td class="rnr-label">
+		{$label outside_stock Form_Commission}
+	</td>
+	<td class="rnr-control style3">
+		{$Form_Commission_value}&nbsp;
+	</td>
+</tr>
+{END Form_Commission_fieldblock}
+	{BEGIN Form_Paid_Date_fieldblock}<tr class="{$fielddispclass_Form_Paid_Date}" data-fieldname="Form_Paid_Date">
+	<td class="rnr-label">
+		{$label outside_stock Form_Paid_Date}
+	</td>
+	<td class="rnr-control style3">
+		{$Form_Paid_Date_value}&nbsp;
+	</td>
+</tr>
+{END Form_Paid_Date_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+{END container_main}
+
+</div>
+{END container_all}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

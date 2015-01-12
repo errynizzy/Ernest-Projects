@@ -1,0 +1,436 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}<P align="center"></P>
+{$header}
+	<P></P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}<div class="rnr-c rnr-cv rnr-c-search">
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	{$pagetitlelabel simcards_batches_query search}
+</span></div>
+
+
+{BEGIN conditions_block}<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<TBODY>
+  <tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_POS_Number}">
+	{BEGIN POS_Number_fieldblock}<td>
+		{$label simcards_batches_query POS_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$POS_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_POS_Number}
+	</td>
+	<td>
+		{$POS_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$POS_Number_editcontrol1}&nbsp;
+	</td>
+{END POS_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_FL_or_POS_Name}">
+	{BEGIN FL_or_POS_Name_fieldblock}<td>
+		{$label simcards_batches_query FL_or_POS_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$FL_or_POS_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_FL_or_POS_Name}
+	</td>
+	<td>
+		{$FL_or_POS_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$FL_or_POS_Name_editcontrol1}&nbsp;
+	</td>
+{END FL_or_POS_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TL_Name}">
+	{BEGIN TL_Name_fieldblock}<td>
+		{$label simcards_batches_query TL_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$TL_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_TL_Name}
+	</td>
+	<td>
+		{$TL_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TL_Name_editcontrol1}&nbsp;
+	</td>
+{END TL_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SC_DSO_RDO_Name}">
+	{BEGIN SC_DSO_RDO_Name_fieldblock}<td>
+		{$label simcards_batches_query SC_DSO_RDO_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$SC_DSO_RDO_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_SC_DSO_RDO_Name}
+	</td>
+	<td>
+		{$SC_DSO_RDO_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SC_DSO_RDO_Name_editcontrol1}&nbsp;
+	</td>
+{END SC_DSO_RDO_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Event_date}">
+	{BEGIN Event_date_fieldblock}<td>
+		{$label simcards_batches Event_date} </td>
+	<td>
+		<input type="checkbox" {$Event_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Event_date}
+	</td>
+	<td>
+		{$Event_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Event_date_editcontrol1}&nbsp;
+	</td>
+{END Event_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_time}">
+	{BEGIN time_fieldblock}<td>
+		{$label simcards_batches_query time}
+	</td>
+	<td>
+		<input type="checkbox" {$time_notbox}>
+	</td>
+	<td>
+		{$searchtype_time}
+	</td>
+	<td>
+		{$time_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$time_editcontrol1}&nbsp;
+	</td>
+{END time_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activation_Status}">
+	{BEGIN Activation_Status_fieldblock}<td>
+		{$label simcards_batches_query Activation_Status}
+	</td>
+	<td>
+		<input type="checkbox" {$Activation_Status_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activation_Status}
+	</td>
+	<td>
+		{$Activation_Status_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activation_Status_editcontrol1}&nbsp;
+	</td>
+{END Activation_Status_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Active_MSISDN}">
+	{BEGIN Active_MSISDN_fieldblock}<td>
+		{$label simcards_batches Active_MSISDN} </td>
+	<td>
+		<input type="checkbox" {$Active_MSISDN_notbox}>
+	</td>
+	<td>
+		{$searchtype_Active_MSISDN}
+	</td>
+	<td>
+		{$Active_MSISDN_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Active_MSISDN_editcontrol1}&nbsp;
+	</td>
+{END Active_MSISDN_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_New_MSISDN}">
+	{BEGIN New_MSISDN_fieldblock}<td>
+		{$label simcards_batches_query New_MSISDN}
+	</td>
+	<td>
+		<input type="checkbox" {$New_MSISDN_notbox}>
+	</td>
+	<td>
+		{$searchtype_New_MSISDN}
+	</td>
+	<td>
+		{$New_MSISDN_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$New_MSISDN_editcontrol1}&nbsp;
+	</td>
+{END New_MSISDN_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Swap_Date}">
+	{BEGIN Swap_Date_fieldblock}<td>
+		{$label simcards_batches_query Swap_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Swap_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Swap_Date}
+	</td>
+	<td>
+		{$Swap_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Swap_Date_editcontrol1}&nbsp;
+	</td>
+{END Swap_Date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_batch_name}">
+	{BEGIN batch_name_fieldblock}<td>
+		{$label simcards_batches_query batch_name}
+	</td>
+	<td>
+		<input type="checkbox" {$batch_name_notbox}>
+	</td>
+	<td>
+		{$searchtype_batch_name}
+	</td>
+	<td>
+		{$batch_name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$batch_name_editcontrol1}&nbsp;
+	</td>
+{END batch_name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ICCID}">
+	{BEGIN ICCID_fieldblock}<td>
+		{$label simcards_batches_query ICCID}
+	</td>
+	<td>
+		<input type="checkbox" {$ICCID_notbox}>
+	</td>
+	<td>
+		{$searchtype_ICCID}
+	</td>
+	<td>
+		{$ICCID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ICCID_editcontrol1}&nbsp;
+	</td>
+{END ICCID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Airtime_transered}">
+	{BEGIN Airtime_transered_fieldblock}<td>
+		{$label simcards_batches_query Airtime_transered}
+	</td>
+	<td>
+		<input type="checkbox" {$Airtime_transered_notbox}>
+	</td>
+	<td>
+		{$searchtype_Airtime_transered}
+	</td>
+	<td>
+		{$Airtime_transered_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Airtime_transered_editcontrol1}&nbsp;
+	</td>
+{END Airtime_transered_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Transfer_date}">
+	{BEGIN Transfer_date_fieldblock}<td>
+		{$label simcards_batches_query Transfer_date}
+	</td>
+	<td>
+		<input type="checkbox" {$Transfer_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Transfer_date}
+	</td>
+	<td>
+		{$Transfer_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Transfer_date_editcontrol1}&nbsp;
+	</td>
+{END Transfer_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activation_Commission}">
+	{BEGIN Activation_Commission_fieldblock}<td>
+		{$label simcards_batches_query Activation_Commission}
+	</td>
+	<td>
+		<input type="checkbox" {$Activation_Commission_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activation_Commission}
+	</td>
+	<td>
+		{$Activation_Commission_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activation_Commission_editcontrol1}&nbsp;
+	</td>
+{END Activation_Commission_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Returned}">
+	{BEGIN Form_Returned_fieldblock}<td>
+		{$label simcards_batches_query Form_Returned}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Returned_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Returned}
+	</td>
+	<td>
+		{$Form_Returned_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Returned_editcontrol1}&nbsp;
+	</td>
+{END Form_Returned_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Status}">
+	{BEGIN Form_Status_fieldblock}<td>
+		{$label simcards_batches_query Form_Status}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Status_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Status}
+	</td>
+	<td>
+		{$Form_Status_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Status_editcontrol1}&nbsp;
+	</td>
+{END Form_Status_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Commission}">
+	{BEGIN Form_Commission_fieldblock}<td>
+		{$label simcards_batches_query Form_Commission}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Commission_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Commission}
+	</td>
+	<td>
+		{$Form_Commission_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Commission_editcontrol1}&nbsp;
+	</td>
+{END Form_Commission_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Form_Paid_Date}">
+	{BEGIN Form_Paid_Date_fieldblock}<td>
+		{$label simcards_batches_query Form_Paid_Date}
+	</td>
+	<td>
+		<input type="checkbox" {$Form_Paid_Date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Form_Paid_Date}
+	</td>
+	<td>
+		{$Form_Paid_Date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Form_Paid_Date_editcontrol1}&nbsp;
+	</td>
+{END Form_Paid_Date_fieldblock}
+	</tr>
+
+</TBODY></table></div>
+
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{$pagetitlelabel simcards_batches search} 
+{END container_search}
+
+
+		</div>
+		<DIV class="rnr-page">
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align="center">
+{$footer}
+	<P></P>{END body}
+	</body>
+</html>

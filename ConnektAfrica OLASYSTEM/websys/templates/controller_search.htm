@@ -1,0 +1,165 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}<div class="rnr-c rnr-cv rnr-c-search">
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	{$pagetitlelabel controller search}
+</span></div>
+
+
+{BEGIN conditions_block}<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<TBODY>
+  <tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Sales_Coordinator_Name}">
+	{BEGIN Sales_Coordinator_Name_fieldblock}<td>
+		{$label controller Sales_Coordinator_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Sales_Coordinator_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sales_Coordinator_Name}
+	</td>
+	<td>
+		{$Sales_Coordinator_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sales_Coordinator_Name_editcontrol1}&nbsp;
+	</td>
+{END Sales_Coordinator_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sales_Coordinator_Number}">
+	{BEGIN Sales_Coordinator_Number_fieldblock}<td>
+		{$label controller Sales_Coordinator_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Sales_Coordinator_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sales_Coordinator_Number}
+	</td>
+	<td>
+		{$Sales_Coordinator_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sales_Coordinator_Number_editcontrol1}&nbsp;
+	</td>
+{END Sales_Coordinator_Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Team_Leader_Name}">
+	{BEGIN Team_Leader_Name_fieldblock}<td>
+		{$label controller Team_Leader_Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Team_Leader_Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Team_Leader_Name}
+	</td>
+	<td>
+		{$Team_Leader_Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Team_Leader_Name_editcontrol1}&nbsp;
+	</td>
+{END Team_Leader_Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Team_Leader_Number}">
+	{BEGIN Team_Leader_Number_fieldblock}<td>
+		{$label controller Team_Leader_Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Team_Leader_Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Team_Leader_Number}
+	</td>
+	<td>
+		{$Team_Leader_Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Team_Leader_Number_editcontrol1}&nbsp;
+	</td>
+{END Team_Leader_Number_fieldblock}
+	</tr>
+
+</TBODY></table></div>
+
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

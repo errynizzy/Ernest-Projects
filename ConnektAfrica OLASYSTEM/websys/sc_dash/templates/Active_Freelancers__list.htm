@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 10.00.9200.16921"></HEAD> 
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class="rnr-hfiller"></DIV>
+{BEGIN prints_block}<DIV class="style1 rnr-br rnr-b-toplinks_print {$brickclass_toplinks_print}">{BEGIN print_link}<A class="rnr-button" href="Active_Freelancers__print.php" target="_blank" {$printlink_attrs}>Print this 
+page</A> {END print_link}{BEGIN printall_link}<A class="rnr-button" href="Active_Freelancers__print.php?all=1" target="_blank" {$printalllink_attrs}>Print all 
+pages</A> {END printall_link}</DIV>
+{END prints_block}{BEGIN asearch_link}<DIV class="style1 rnr-br rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}"><A class="rnr-button" href="Active_Freelancers__search.php" {$advsearchlink_attrs}>Advanced search</A> </DIV>
+{END asearch_link}{BEGIN import_link}<DIV class="style1 rnr-br rnr-b-toplinks_import {$brickclass_toplinks_import}"><A class="rnr-button" href="Active_Freelancers__import.php?{$crosstable_attrs}" {$importlink_attrs}>Import</A> </DIV>
+{END import_link}{BEGIN export_link}<DIV class="style1 rnr-br rnr-b-toplinks_export {$brickclass_toplinks_export}"><A class="rnr-button" href="Active_Freelancers__export.php" target="_blank" {$exportlink_attrs}>Export 
+results</A> </DIV>{END export_link}</DIV>{END container_toplinks}
+{BEGIN container_search}
+<DIV class="rnr-c rnr-ch rnr-c-search">
+{BEGIN searchform_block}<DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT type="text" size="25" {$searchfor_attrs}>{END searchform_text} 
+{BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A>	 {END searchform_search}{BEGIN searchform_showall}<A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</A> {END searchform_showall}</SPAN> </DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}></A> <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}></A> </SPAN> {END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class="rnr-hfiller"></DIV>
+{BEGIN details_block}<DIV class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>	Details found: 
+<B><SPAN class="rnr-details_found_count">
+{$records_found}</SPAN></B> </SPAN> </DIV>
+{END details_block}{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>	Page <B>
+{$page}</B> of <B>
+{$maxpages}</B> </SPAN> </DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">	Records 
+Per Page:&nbsp;
+{$recsPerPage} </SPAN>	</DIV>{END recordspp_block}</DIV>{END container_search}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_logg}
+<DIV class="rnr-c rnr-cv rnr-c-logg">
+{BEGIN security_block}<DIV class="rnr-brickcontents style1 rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id="login_block{$id}">{BEGIN loggedas_message}<SPAN>Logged on 
+as&nbsp;<B>
+{$username}</B><BR><BR></SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class="rnr-button" href="#" {$guestloginlink_attrs}>Login</A> 
+</SPAN> {END guestloginbutton}{BEGIN logoutbutton}<A class="rnr-button" href="login.php?a=logout" {$logoutlink_attrs}>Log out</A> <!-- Permissions --> 
+{END logoutbutton}</DIV></DIV>{END security_block}</DIV>{END container_logg}
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">
+{BEGIN searchPanel}<DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+<DIV class="searchPanelContainer">
+<DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}><!-- Search panel content --> 
+<DIV class="srchCritTop" style="display: none;">	Criteria:&nbsp; <INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<SPAN>all</SPAN>{END all_checkbox_label}	&nbsp;&nbsp;&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<SPAN>any</SPAN> 
+{END any_checkbox_label}</DIV>
+<DIV class="addOption"><SPAN class="rnr-buttons-group"><A class="rnr-button" id="showHideControlChooseMenu{$id}" href="#" {$showHideCtrls_attrs}>Add 
+field</A> </SPAN> <A class="rnr-button" id="showHideSearchType{$id}" href="#" {$showHideCtrlsOpt_attrs}>
+{$showHideOpt_mess}</A> </DIV>
+<TABLE class="controlsBlock {$controls_block_class}">{BEGIN searchCtrlBlock}
+  <TBODY>
+  <TR class="srchPanelRow" {$filterRow_attrs}>
+    <TD class="srchPanelCell">{$delCtrlButt}</TD>
+    <TD class="srchPanelCell">
+      {$fLabel}:&nbsp;</TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class="rnr-searchtype">
+      {$searchtype}</DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol}</DIV>
+      <DIV class="rnr-searchcontrol">
+      {$searchcontrol1}</DIV></TD></TR></TBODY>{END searchCtrlBlock}</TABLE>
+<DIV align="left" class="bottomSearchButt" {$bottomSearchButt_attrs}><A class="rnr-button" id="searchButton{$id}" href="#" {$searchbutton_attrs}>Search</A> 
+</DIV></DIV></DIV></DIV>
+{END searchPanel}{BEGIN menu_block}{$menu main}{END menu_block}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN add_link}<A class="rnr-button" href="Active_Freelancers__add.php" {$addlink_attrs}>Add new</A> {END add_link}{BEGIN inlineadd_link}<A class="rnr-button" href="#" {$inlineaddlink_attrs}>Inline 
+Add</A> {END inlineadd_link}</DIV>
+{END newrecord_controls_block}<DIV class="rnr-hfiller"></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0">
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH ieditcont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN Manager_Name_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Manager_Name_class}">{BEGIN Manager_Name_fieldheader}<SPAN {$Manager_Name_orderlinkattrs}>
+      {$label Active_Freelancers_ Manager_Name} </SPAN> {END Manager_Name_fieldheader}</TH>
+    {END Manager_Name_fieldheadercolumn}{BEGIN Title_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Title_class}">{BEGIN Title_fieldheader}<SPAN {$Title_orderlinkattrs}>
+      {$label Active_Freelancers_ Title} 
+      </SPAN> {END Title_fieldheader}</TH>
+    {END Title_fieldheadercolumn}{BEGIN Date_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Date_class}">{BEGIN Date_fieldheader}<SPAN {$Date_orderlinkattrs}>
+      {$label Active_Freelancers_ Date} 
+      </SPAN> {END Date_fieldheader}</TH>
+    {END Date_fieldheadercolumn}{BEGIN Active_FL_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Active_FL_class}">{BEGIN Active_FL_fieldheader}<SPAN {$Active_FL_orderlinkattrs}>
+      {$label Active_Freelancers_ Active_FL} </SPAN> {END Active_FL_fieldheader}</TH>
+    {END Active_FL_fieldheadercolumn}<TH class="rnr-edge">&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class="rnr-cs">&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" ieditcont="all" {$rowstyle} {$recordattrs}></TD>
+    {END listIcons_column}{BEGIN Manager_Name_fieldcolumn}<TD class="{$Manager_Name_class}" {$Manager_Name_style} {$recordattrs}>
+      {$Manager_Name_value} </TD>
+    {END Manager_Name_fieldcolumn}{BEGIN Title_fieldcolumn}<TD class="{$Title_class}" {$Title_style} {$recordattrs}>
+      {$Title_value} </TD>
+    {END Title_fieldcolumn}{BEGIN Date_fieldcolumn}<TD class="{$Date_class}" {$Date_style} {$recordattrs}>
+      {$Date_value} </TD>
+    {END Date_fieldcolumn}{BEGIN Active_FL_fieldcolumn}<TD class="{$Active_FL_class}" {$Active_FL_style} {$recordattrs}>
+      <DIV align="center">
+      {$Active_FL_value}</DIV></TD>
+    {END Active_FL_fieldcolumn}<TD class="rnr-edge" {$recordattrs}>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY></TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>{END pagination_block}</DIV>{END container_pagination}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

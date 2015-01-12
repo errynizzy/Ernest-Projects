@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+<P align=center>{$header} </P>
+<DIV class=rnr-page>
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class=rnr-hfiller></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">{BEGIN loggedas_message}<SPAN>Logged on as&nbsp;<B>{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class=rnr-button href="#" {$guestloginlink_attrs}>Login</A> </SPAN>{END guestloginbutton}{BEGIN logoutbutton}<A class=rnr-button href="#" {$logoutlink_attrs}>Log out</A> {END logoutbutton}</DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN searchform_block}<DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT size=25 type=text {$searchfor_attrs}>{END searchform_text} {BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A>{END searchform_search}{BEGIN searchform_showall}<A class=rnr-button href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</A> {END searchform_showall}</SPAN></DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A id=showSrchWin{$id} class="rnr-button img" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}></A><A id=showOptPanel{$id} class="rnr-button img" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}></A></SPAN>{END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class=rnr-hfiller></DIV></DIV>{END container_hmenu}
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">
+{BEGIN menu_block}{$menu main}{END menu_block}{BEGIN searchPanel}<DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+<DIV class=searchPanelContainer>
+<DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}><!-- Search panel content -->
+<DIV style="DISPLAY: none" class=srchCritTop>Criteria:&nbsp; <INPUT class=rnr-radio-button type=radio name=srchType {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<SPAN>all</SPAN>{END all_checkbox_label} 
+&nbsp;&nbsp;&nbsp; <INPUT class=rnr-radio-button type=radio name=srchType {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<SPAN>any</SPAN> 
+{END any_checkbox_label}</DIV>
+<DIV class=addOption><SPAN class=rnr-buttons-group><A id=showHideControlChooseMenu{$id} class=rnr-button href="#" {$showHideCtrls_attrs}>Add field</A> </SPAN><A id=showHideSearchType{$id} class=rnr-button href="#" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</A> 
+</DIV>
+<TABLE class="controlsBlock {$controls_block_class}">{BEGIN searchCtrlBlock}
+  <TBODY>
+  <TR class=srchPanelRow {$filterRow_attrs}>
+    <TD class=srchPanelCell>{$delCtrlButt}</TD>
+    <TD class=srchPanelCell>{$fLabel}:&nbsp;</TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class=rnr-searchtype>{$searchtype}</DIV>
+      <DIV class=rnr-searchcontrol>{$searchcontrol}</DIV>
+      <DIV class=rnr-searchcontrol>{$searchcontrol1}</DIV></TD></TR></TBODY>{END searchCtrlBlock}</TABLE>
+<DIV class=bottomSearchButt align=left {$bottomSearchButt_attrs}><A id=searchButton{$id} class=rnr-button href="#" {$searchbutton_attrs}>Search</A> 
+</DIV></DIV></DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<SPAN class=rnr-buttons-group><A id=selectButtonsToggler{$id} class="rnr-button {$withSelectedClass}" href="#">With selected...</A> 
+<UL id=selectButtonsGroup{$id} class=rnr-list>
+  {BEGIN exportselected_link}<LI><A class="rnr-button link" href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export</A> </LI>{END exportselected_link}</UL></SPAN>{END widhtSelected}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class=rnr-buttons-group>{BEGIN moreButtons}<A id=extraButtonsToggler{$id} class=rnr-button href="#">More...</A> 
+<UL id=extraButtonsGroup{$id} class="rnr-list rnr-buttons-group">
+  {BEGIN asearch_link}<LI><A class="rnr-button link" href="scratch_cards_distribution_records_search.php" {$advsearchlink_attrs}>Advanced search</A> </LI>
+  {END asearch_link}{BEGIN export_link}<LI><A class="rnr-button link" href="scratch_cards_distribution_records_export.php" target=_blank {$exportlink_attrs}>Export results</A> 
+</LI>{END export_link}</UL>{END moreButtons}</SPAN></DIV>
+{END more_list}<DIV class=rnr-hfiller></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</DIV>
+{END pagination_block}<DIV class=rnr-leftbricks>
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>Details found: 
+<B><SPAN class=rnr-details_found_count>{$records_found}</SPAN></B> 
+</SPAN></DIV>{END details_block}</DIV>
+<DIV class=rnr-rightbricks>
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>Page <B>{$page}</B> of 
+<B>{$maxpages}</B> </SPAN></DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id=recordspp_block{$id} name="recordspp_block{$id}">Records Per Page:&nbsp;{$recsPerPage} 
+</SPAN></DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellPadding=0>
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH iEditCont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH class=rnr-bc><INPUT type=checkbox {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN Dist_ID_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Dist_ID_class}">{BEGIN Dist_ID_fieldheader}<SPAN {$Dist_ID_orderlinkattrs}>{$label scratch_cards_distribution_records Dist_ID} 
+      </SPAN>{END Dist_ID_fieldheader}</TH>
+    {END Dist_ID_fieldheadercolumn}{BEGIN Dist_Date_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Dist_Date_class}">{BEGIN Dist_Date_fieldheader}<SPAN {$Dist_Date_orderlinkattrs}>{$label scratch_cards_distribution_records Dist_Date} 
+      </SPAN>{END Dist_Date_fieldheader}</TH>
+    {END Dist_Date_fieldheadercolumn}{BEGIN Serial_No_From_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Serial_No_From_class}">{BEGIN Serial_No_From_fieldheader}<SPAN {$Serial_No_From_orderlinkattrs}>{$label scratch_cards_distribution_records Serial_No_From} </SPAN>{END Serial_No_From_fieldheader}</TH>
+    {END Serial_No_From_fieldheadercolumn}{BEGIN Serial_No_To_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Serial_No_To_class}">{BEGIN Serial_No_To_fieldheader}<SPAN {$Serial_No_To_orderlinkattrs}>{$label scratch_cards_distribution_records Serial_No_To} </SPAN>{END Serial_No_To_fieldheader}</TH>
+    {END Serial_No_To_fieldheadercolumn}{BEGIN Full_Name_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Full_Name_class}">{BEGIN Full_Name_fieldheader}<SPAN {$Full_Name_orderlinkattrs}>{$label scratch_cards_distribution_records Full_Name} 
+      </SPAN>{END Full_Name_fieldheader}</TH>
+    {END Full_Name_fieldheadercolumn}{BEGIN POS_ALT_Number_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$POS_ALT_Number_class}">{BEGIN POS_ALT_Number_fieldheader}<SPAN {$POS_ALT_Number_orderlinkattrs}>{$label scratch_cards_distribution_records POS_ALT_Number} </SPAN>{END POS_ALT_Number_fieldheader}</TH>
+    {END POS_ALT_Number_fieldheadercolumn}{BEGIN Area_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Area_class}">{BEGIN Area_fieldheader}<SPAN {$Area_orderlinkattrs}>{$label scratch_cards_distribution_records Area} 
+    </SPAN>{END Area_fieldheader}</TH>
+    {END Area_fieldheadercolumn}{BEGIN Alt_Number_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Alt_Number_class}">{BEGIN Alt_Number_fieldheader}<SPAN {$Alt_Number_orderlinkattrs}>{$label scratch_cards_distribution_records Alt_Number} 
+      </SPAN>{END Alt_Number_fieldheader}</TH>
+    {END Alt_Number_fieldheadercolumn}{BEGIN Denomination_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Denomination_class}">{BEGIN Denomination_fieldheader}<SPAN {$Denomination_orderlinkattrs}>{$label scratch_cards_distribution_records Denomination} </SPAN>{END Denomination_fieldheader}</TH>
+    {END Denomination_fieldheadercolumn}{BEGIN Quantity_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Quantity_class}">{BEGIN Quantity_fieldheader}<SPAN {$Quantity_orderlinkattrs}>{$label scratch_cards_distribution_records Quantity} 
+      </SPAN>{END Quantity_fieldheader}</TH>
+    {END Quantity_fieldheadercolumn}{BEGIN Lat_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Lat_class}">{BEGIN Lat_fieldheader}<SPAN {$Lat_orderlinkattrs}>{$label scratch_cards_distribution_records Lat} 
+    </SPAN>{END Lat_fieldheader}</TH>
+    {END Lat_fieldheadercolumn}{BEGIN Lon_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$Lon_class}">{BEGIN Lon_fieldheader}<SPAN {$Lon_orderlinkattrs}>{$label scratch_cards_distribution_records Lon} 
+    </SPAN>{END Lon_fieldheader}</TH>
+    {END Lon_fieldheadercolumn}{BEGIN DSO_Name_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$DSO_Name_class}">{BEGIN DSO_Name_fieldheader}<SPAN {$DSO_Name_orderlinkattrs}>{$label scratch_cards_distribution_records DSO_Name} 
+      </SPAN>{END DSO_Name_fieldheader}</TH>
+    {END DSO_Name_fieldheadercolumn}{BEGIN DSO_Number_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$DSO_Number_class}">{BEGIN DSO_Number_fieldheader}<SPAN {$DSO_Number_orderlinkattrs}>{$label scratch_cards_distribution_records DSO_Number} 
+      </SPAN>{END DSO_Number_fieldheader}</TH>
+    {END DSO_Number_fieldheadercolumn}<TH class=rnr-edge>&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class=rnr-cs>&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>{BEGIN view_column}{BEGIN view_link}<A class=rnr-button-img title=View data-icon="view" {$viewlink_attrs}></A>{END view_link}{END view_column}</TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class=rnr-bc iEditCont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox} </TD>
+    {END checkbox_column}{BEGIN Dist_ID_fieldcolumn}<TD class={$Dist_ID_class} {$Dist_ID_style} {$recordattrs}>{$Dist_ID_value} </TD>
+    {END Dist_ID_fieldcolumn}{BEGIN Dist_Date_fieldcolumn}<TD class={$Dist_Date_class} {$Dist_Date_style} {$recordattrs}>{$Dist_Date_value} </TD>
+    {END Dist_Date_fieldcolumn}{BEGIN Serial_No_From_fieldcolumn}<TD class={$Serial_No_From_class} {$Serial_No_From_style} {$recordattrs}>{$Serial_No_From_value} 
+    </TD>
+    {END Serial_No_From_fieldcolumn}{BEGIN Serial_No_To_fieldcolumn}<TD class={$Serial_No_To_class} {$Serial_No_To_style} {$recordattrs}>{$Serial_No_To_value} </TD>
+    {END Serial_No_To_fieldcolumn}{BEGIN Full_Name_fieldcolumn}<TD class={$Full_Name_class} {$Full_Name_style} {$recordattrs}>{$Full_Name_value} </TD>
+    {END Full_Name_fieldcolumn}{BEGIN POS_ALT_Number_fieldcolumn}<TD class={$POS_ALT_Number_class} {$POS_ALT_Number_style} {$recordattrs}>{$POS_ALT_Number_value} 
+    </TD>
+    {END POS_ALT_Number_fieldcolumn}{BEGIN Area_fieldcolumn}<TD class={$Area_class} {$Area_style} {$recordattrs}>{$Area_value} </TD>
+    {END Area_fieldcolumn}{BEGIN Alt_Number_fieldcolumn}<TD class={$Alt_Number_class} {$Alt_Number_style} {$recordattrs}>{$Alt_Number_value} </TD>
+    {END Alt_Number_fieldcolumn}{BEGIN Denomination_fieldcolumn}<TD class={$Denomination_class} {$Denomination_style} {$recordattrs}>{$Denomination_value} </TD>
+    {END Denomination_fieldcolumn}{BEGIN Quantity_fieldcolumn}<TD class={$Quantity_class} {$Quantity_style} {$recordattrs}>{$Quantity_value} </TD>
+    {END Quantity_fieldcolumn}{BEGIN Lat_fieldcolumn}<TD class={$Lat_class} {$Lat_style} {$recordattrs}>{$Lat_value} </TD>
+    {END Lat_fieldcolumn}{BEGIN Lon_fieldcolumn}<TD class={$Lon_class} {$Lon_style} {$recordattrs}>{$Lon_value} </TD>
+    {END Lon_fieldcolumn}{BEGIN DSO_Name_fieldcolumn}<TD class={$DSO_Name_class} {$DSO_Name_style} {$recordattrs}>{$DSO_Name_value} </TD>
+    {END DSO_Name_fieldcolumn}{BEGIN DSO_Number_fieldcolumn}<TD class={$DSO_Number_class} {$DSO_Number_style} {$recordattrs}>{$DSO_Number_value} </TD>
+    {END DSO_Number_fieldcolumn}<TD class=rnr-edge {$recordattrs}>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class=rnr-cs {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY></TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</DIV>
+{END pagination_block}<DIV class=rnr-leftbricks>
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>Details found: 
+<B><SPAN class=rnr-details_found_count>{$records_found}</SPAN></B> 
+</SPAN></DIV>{END details_block}</DIV>
+<DIV class=rnr-rightbricks>
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>Page <B>{$page}</B> of 
+<B>{$maxpages}</B> </SPAN></DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id=recordspp_block{$id} name="recordspp_block{$id}">Records Per Page:&nbsp;{$recsPerPage} 
+</SPAN></DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+<P align=center>{$footer} 
+</P>{END body}</BODY></HTML>

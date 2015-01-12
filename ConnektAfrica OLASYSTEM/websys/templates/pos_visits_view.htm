@@ -1,0 +1,214 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	{$pagetitlelabel pos_visits view}
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN Manager_Name_fieldblock}<tr class="{$fielddispclass_Manager_Name}" data-fieldname="Manager_Name">
+	<td class="rnr-label">
+		{$label pos_visits Manager_Name}
+	</td>
+	<td class="rnr-control style3">
+		{$Manager_Name_value}&nbsp;
+	</td>
+</tr>
+{END Manager_Name_fieldblock}
+	{BEGIN Activator_Name_fieldblock}<tr class="{$fielddispclass_Activator_Name}" data-fieldname="Activator_Name">
+	<td class="rnr-label">
+		{$label pos_visits Activator_Name}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Name_value}&nbsp;
+	</td>
+</tr>
+{END Activator_Name_fieldblock}
+	{BEGIN Activator_Number_fieldblock}<tr class="{$fielddispclass_Activator_Number}" data-fieldname="Activator_Number">
+	<td class="rnr-label">
+		{$label pos_visits Activator_Number}
+	</td>
+	<td class="rnr-control style3">
+		{$Activator_Number_value}&nbsp;
+	</td>
+</tr>
+{END Activator_Number_fieldblock}
+	{BEGIN business_name_fieldblock}<tr class="{$fielddispclass_business_name}" data-fieldname="business_name">
+	<td class="rnr-label">
+		{$label pos_visits business_name}
+	</td>
+	<td class="rnr-control style3">
+		{$business_name_value}&nbsp;
+	</td>
+</tr>
+{END business_name_fieldblock}
+	{BEGIN altenative_number_fieldblock}<tr class="{$fielddispclass_altenative_number}" data-fieldname="altenative_number">
+	<td class="rnr-label">
+		{$label pos_visits altenative_number}
+	</td>
+	<td class="rnr-control style3">
+		{$altenative_number_value}&nbsp;
+	</td>
+</tr>
+{END altenative_number_fieldblock}
+	{BEGIN Area_fieldblock}<tr class="{$fielddispclass_Area}" data-fieldname="Area">
+	<td class="rnr-label">
+		{$label pos_visits Area}
+	</td>
+	<td class="rnr-control style3">
+		{$Area_value}&nbsp;
+	</td>
+</tr>
+{END Area_fieldblock}
+	{BEGIN Date_fieldblock}<tr class="{$fielddispclass_Date}" data-fieldname="Date">
+	<td class="rnr-label">
+		{$label pos_visits Date}
+	</td>
+	<td class="rnr-control style3">
+		{$Date_value}&nbsp;
+	</td>
+</tr>
+{END Date_fieldblock}
+	{BEGIN last_chekin_fieldblock}<tr class="{$fielddispclass_last_chekin}" data-fieldname="last_chekin">
+	<td class="rnr-label">
+		{$label pos_visits last_chekin}
+	</td>
+	<td class="rnr-control style3">
+		{$last_chekin_value}&nbsp;
+	</td>
+</tr>
+{END last_chekin_fieldblock}
+	{BEGIN Sale_fieldblock}<tr class="{$fielddispclass_Sale}" data-fieldname="Sale">
+	<td class="rnr-label">
+		{$label pos_visits Sale}
+	</td>
+	<td class="rnr-control style3">
+		{$Sale_value}&nbsp;
+	</td>
+</tr>
+{END Sale_fieldblock}
+	{BEGIN Transfer_Amount_fieldblock}<tr class="{$fielddispclass_Transfer_Amount}" data-fieldname="Transfer_Amount">
+	<td class="rnr-label">
+		{$label pos_visits Transfer_Amount}
+	</td>
+	<td class="rnr-control style3">
+		{$Transfer_Amount_value}&nbsp;
+	</td>
+</tr>
+{END Transfer_Amount_fieldblock}
+	{BEGIN Transfer_From_fieldblock}<tr class="{$fielddispclass_Transfer_From}" data-fieldname="Transfer_From">
+	<td class="rnr-label">
+		{$label pos_visits Transfer_From}
+	</td>
+	<td class="rnr-control style3">
+		{$Transfer_From_value}&nbsp;
+	</td>
+</tr>
+{END Transfer_From_fieldblock}
+	{BEGIN Transfer_Date_fieldblock}<tr class="{$fielddispclass_Transfer_Date}" data-fieldname="Transfer_Date">
+	<td class="rnr-label">
+		{$label pos_visits Transfer_Date}
+	</td>
+	<td class="rnr-control style3">
+		{$Transfer_Date_value}&nbsp;
+	</td>
+</tr>
+{END Transfer_Date_fieldblock}
+	{BEGIN My_Transfer_fieldblock}<tr class="{$fielddispclass_My_Transfer}" data-fieldname="My_Transfer">
+	<td class="rnr-label">
+		{$label pos_visits My_Transfer}
+	</td>
+	<td class="rnr-control style3">
+		{$My_Transfer_value}&nbsp;
+	</td>
+</tr>
+{END My_Transfer_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+{END container_main}
+
+</div>
+{END container_all}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV 
+class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

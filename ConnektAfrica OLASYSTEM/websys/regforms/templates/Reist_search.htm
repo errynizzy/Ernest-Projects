@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY class="{$stylename} function-search" {$bodyattrs}>{BEGIN body}
+<P align=center>{$header} </P>
+<DIV 
+class="rnr-top {$blockclass_top}">
+{BEGIN container_search}
+<DIV class="rnr-c rnr-cv rnr-c-search">
+<DIV 
+class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><SPAN>{$pagetitlelabel Reist search} </SPAN></DIV>
+{BEGIN conditions_block}<DIV class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">
+<CENTER><SPAN class=fieldname>Criteria:&nbsp;</SPAN> <INPUT class=rnr-radio-button type=radio name=srchType {$all_checkbox}><LABEL for=all_checkbox> All conditions</LABEL> 
+&nbsp;&nbsp;&nbsp; <INPUT class=rnr-radio-button type=radio name=srchType {$any_checkbox}><LABEL for=any_checkbox> Any 
+condition</LABEL> </CENTER></DIV>
+{END conditions_block}<DIV 
+class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>NOT</TD>
+    <TD colSpan=3>&nbsp; </TD></TR>
+  <TR class={$fielddispclass_Activator_Number}>{BEGIN Activator_Number_fieldblock}
+    <TD>{$label Reist Activator_Number} </TD>
+    <TD><INPUT type=checkbox {$Activator_Number_notbox}> </TD>
+    <TD>{$searchtype_Activator_Number} </TD>
+    <TD>{$Activator_Number_editcontrol}&nbsp; </TD>
+    <TD>{$Activator_Number_editcontrol1}&nbsp; </TD>{END Activator_Number_fieldblock}</TR>
+  <TR class={$fielddispclass_Activator_Name}>{BEGIN Activator_Name_fieldblock}
+    <TD>{$label Reist Activator_Name} </TD>
+    <TD><INPUT type=checkbox {$Activator_Name_notbox}> </TD>
+    <TD>{$searchtype_Activator_Name} </TD>
+    <TD>{$Activator_Name_editcontrol}&nbsp; </TD>
+    <TD>{$Activator_Name_editcontrol1}&nbsp; </TD>{END Activator_Name_fieldblock}</TR>
+  <TR class={$fielddispclass_Manager_Name}>{BEGIN Manager_Name_fieldblock}
+    <TD>{$label Reist Manager_Name} </TD>
+    <TD><INPUT type=checkbox {$Manager_Name_notbox}> 
+    </TD>
+    <TD>{$searchtype_Manager_Name} </TD>
+    <TD>{$Manager_Name_editcontrol}&nbsp; 
+    </TD>
+    <TD>{$Manager_Name_editcontrol1}&nbsp; 
+    </TD>{END Manager_Name_fieldblock}</TR>
+  <TR class={$fielddispclass_Active}>{BEGIN Active_fieldblock}
+    <TD>{$label Reist Active} </TD>
+    <TD><INPUT type=checkbox {$Active_notbox}> </TD>
+    <TD>{$searchtype_Active} </TD>
+    <TD>{$Active_editcontrol}&nbsp; </TD>
+    <TD>{$Active_editcontrol1}&nbsp; </TD>{END Active_fieldblock}</TR>
+  <TR class={$fielddispclass_Returned_Forms}>{BEGIN Returned_Forms_fieldblock}
+    <TD>{$label Reist Returned_Forms} </TD>
+    <TD><INPUT type=checkbox {$Returned_Forms_notbox}> </TD>
+    <TD>{$searchtype_Returned_Forms} </TD>
+    <TD>{$Returned_Forms_editcontrol}&nbsp; </TD>
+    <TD>{$Returned_Forms_editcontrol1}&nbsp; </TD>{END Returned_Forms_fieldblock}</TR>
+  <TR class={$fielddispclass_Rejected_Forms}>{BEGIN Rejected_Forms_fieldblock}
+    <TD>{$label Reist Rejected_Forms} </TD>
+    <TD><INPUT type=checkbox {$Rejected_Forms_notbox}> </TD>
+    <TD>{$searchtype_Rejected_Forms} </TD>
+    <TD>{$Rejected_Forms_editcontrol}&nbsp; </TD>
+    <TD>{$Rejected_Forms_editcontrol1}&nbsp; 
+  </TD>{END Rejected_Forms_fieldblock}</TR></TBODY></TABLE></DIV>
+<DIV 
+class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<A class="rnr-button main" href="#" {$searchbutton_attrs}>Search</A> {END search_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Reset</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Back to list</A> 
+{END back_button}</DIV></DIV>{END container_fields}</DIV></DIV>{END container_search}</DIV>
+<DIV class=rnr-page>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV>
+<P align=center>{$footer} </P>{END body}</BODY></HTML>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	{$pagetitlelabel simcards view}
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN supplier_name_fieldblock}<tr class="{$fielddispclass_supplier_name}" data-fieldname="supplier_name">
+	<td class="rnr-label">
+		{$label simcards supplier_name}
+	</td>
+	<td class="rnr-control style3">
+		{$supplier_name_value}&nbsp;
+	</td>
+</tr>
+{END supplier_name_fieldblock}
+	{BEGIN supplier_number_fieldblock}<tr class="{$fielddispclass_supplier_number}" data-fieldname="supplier_number">
+	<td class="rnr-label">
+		{$label simcards supplier_number}
+	</td>
+	<td class="rnr-control style3">
+		{$supplier_number_value}&nbsp;
+	</td>
+</tr>
+{END supplier_number_fieldblock}
+	{BEGIN batch_number_fieldblock}<tr class="{$fielddispclass_batch_number}" data-fieldname="batch_number">
+	<td class="rnr-label">
+		{$label simcards batch_number}
+	</td>
+	<td class="rnr-control style3">
+		{$batch_number_value}&nbsp;
+	</td>
+</tr>
+{END batch_number_fieldblock}
+	{BEGIN batch_size_fieldblock}<tr class="{$fielddispclass_batch_size}" data-fieldname="batch_size">
+	<td class="rnr-label">
+		{$label simcards batch_size}
+	</td>
+	<td class="rnr-control style3">
+		{$batch_size_value}&nbsp;
+	</td>
+</tr>
+{END batch_size_fieldblock}
+	{BEGIN Date_fieldblock}<tr class="{$fielddispclass_Date}" data-fieldname="Date">
+	<td class="rnr-label">
+		{$label simcards Date}
+	</td>
+	<td class="rnr-control style3">
+		{$Date_value}&nbsp;
+	</td>
+</tr>
+{END Date_fieldblock}
+	{BEGIN pos_number_fieldblock}<tr class="{$fielddispclass_pos_number}" data-fieldname="pos_number">
+	<td class="rnr-label">
+		{$label simcards pos_number}
+	</td>
+	<td class="rnr-control style3">
+		{$pos_number_value}&nbsp;
+	</td>
+</tr>
+{END pos_number_fieldblock}
+	{BEGIN status_fieldblock}<tr class="{$fielddispclass_status}" data-fieldname="status">
+	<td class="rnr-label">
+		{$label simcards status}
+	</td>
+	<td class="rnr-control style3">
+		{$status_value}&nbsp;
+	</td>
+</tr>
+{END status_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN edit_page_button}<a href="#" class="rnr-button" {$edit_page_button_attrs}>Edit</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

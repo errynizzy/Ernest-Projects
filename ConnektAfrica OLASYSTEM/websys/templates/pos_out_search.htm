@@ -1,0 +1,202 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}<P align=center>{$header}
+	</P>
+<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}<div class="rnr-c rnr-cv rnr-c-search">
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	{$pagetitlelabel pos_out search}
+</span></div>
+
+
+{BEGIN conditions_block}<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<TBODY>
+  <tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_TRANSFER_DATE}">
+	{BEGIN TRANSFER_DATE_fieldblock}<td>
+		{$label pos_out TRANSFER_DATE}
+	</td>
+	<td>
+		<input type="checkbox" {$TRANSFER_DATE_notbox}>
+	</td>
+	<td>
+		{$searchtype_TRANSFER_DATE}
+	</td>
+	<td>
+		{$TRANSFER_DATE_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TRANSFER_DATE_editcontrol1}&nbsp;
+	</td>
+{END TRANSFER_DATE_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ORIGIANL_CUSTOMER}">
+	{BEGIN ORIGIANL_CUSTOMER_fieldblock}<td>
+		{$label pos_out ORIGIANL_CUSTOMER}
+	</td>
+	<td>
+		<input type="checkbox" {$ORIGIANL_CUSTOMER_notbox}>
+	</td>
+	<td>
+		{$searchtype_ORIGIANL_CUSTOMER}
+	</td>
+	<td>
+		{$ORIGIANL_CUSTOMER_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ORIGIANL_CUSTOMER_editcontrol1}&nbsp;
+	</td>
+{END ORIGIANL_CUSTOMER_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ORG_SERVICE_NUMBER}">
+	{BEGIN ORG_SERVICE_NUMBER_fieldblock}<td>
+		{$label pos_out ORG_SERVICE_NUMBER}
+	</td>
+	<td>
+		<input type="checkbox" {$ORG_SERVICE_NUMBER_notbox}>
+	</td>
+	<td>
+		{$searchtype_ORG_SERVICE_NUMBER}
+	</td>
+	<td>
+		{$ORG_SERVICE_NUMBER_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ORG_SERVICE_NUMBER_editcontrol1}&nbsp;
+	</td>
+{END ORG_SERVICE_NUMBER_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CHARGE}">
+	{BEGIN CHARGE_fieldblock}<td>
+		{$label pos_out CHARGE}
+	</td>
+	<td>
+		<input type="checkbox" {$CHARGE_notbox}>
+	</td>
+	<td>
+		{$searchtype_CHARGE}
+	</td>
+	<td>
+		{$CHARGE_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CHARGE_editcontrol1}&nbsp;
+	</td>
+{END CHARGE_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_DESTINATION_CUSTOMER}">
+	{BEGIN DESTINATION_CUSTOMER_fieldblock}<td>
+		{$label pos_out DESTINATION_CUSTOMER}
+	</td>
+	<td>
+		<input type="checkbox" {$DESTINATION_CUSTOMER_notbox}>
+	</td>
+	<td>
+		{$searchtype_DESTINATION_CUSTOMER}
+	</td>
+	<td>
+		{$DESTINATION_CUSTOMER_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$DESTINATION_CUSTOMER_editcontrol1}&nbsp;
+	</td>
+{END DESTINATION_CUSTOMER_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_DEST_SERVICE_NUMBER}">
+	{BEGIN DEST_SERVICE_NUMBER_fieldblock}<td>
+		{$label pos_out DEST_SERVICE_NUMBER}
+	</td>
+	<td>
+		<input type="checkbox" {$DEST_SERVICE_NUMBER_notbox}>
+	</td>
+	<td>
+		{$searchtype_DEST_SERVICE_NUMBER}
+	</td>
+	<td>
+		{$DEST_SERVICE_NUMBER_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$DEST_SERVICE_NUMBER_editcontrol1}&nbsp;
+	</td>
+{END DEST_SERVICE_NUMBER_fieldblock}
+	</tr>
+
+</TBODY></table></div>
+
+
+
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<DIV class=rnr-page>
+<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		</div>
+	<DIV 
+class="rnr-bottom {$blockclass_bottom}"></div>
+		
+		<P align=center>{$footer}
+	</P>{END body}
+	</body>
+</html>

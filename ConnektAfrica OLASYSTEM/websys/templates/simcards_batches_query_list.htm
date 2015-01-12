@@ -1,0 +1,592 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>Activations &amp; Airtime Transfers</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}<P align="center"></P>
+{$header}
+	<P></P>
+<div class="rnr-page">
+		{BEGIN container_toplinks}<div class="rnr-c rnr-ch rnr-c-toplinks">
+<div class="rnr-hfiller"></div>
+{BEGIN security_block}<div  class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">{BEGIN loggedas_message}<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+{END loggedas_message}
+{BEGIN guestloginbutton}<span>
+<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+</span>
+{END guestloginbutton}
+{BEGIN logoutbutton}<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+{END logoutbutton}
+
+</div>
+{END security_block}
+
+
+
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN searchform_block}<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_hmenu}
+
+
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}{$menu main}
+{END menu_block}
+
+
+{BEGIN searchPanel}<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+
+{BEGIN record_controls_block}<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">With selected...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+		{BEGIN editselected_link}<li>
+		<a href="#" class="rnr-button link" {$editselectedlink_attrs} {$editselectedlink_span}>Edit</a>
+</li>
+	{END editselected_link}
+
+	
+		{BEGIN exportselected_link}<li>
+		<a href="#" class="rnr-button link" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export</a>
+</li>
+	{END exportselected_link}
+
+	</ul>
+</span>
+{END widhtSelected}
+		{BEGIN saveall_link}<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Save all</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</a>
+	{END cancelall_link}
+</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">More...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}<li>
+	<a href="simcards_batches_query_search.php" class="rnr-button link" {$advsearchlink_attrs}>Advanced search</a>
+</li>
+{END asearch_link}
+
+{BEGIN export_link}<li>
+	<a target="_blank" href="simcards_batches_query_export.php" class="rnr-button link" {$exportlink_attrs}>Export results</a>
+</li>
+{END export_link}
+
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}{BEGIN grid_block}<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}{BEGIN listIcons_column}<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																																			{BEGIN POS_Number_fieldheadercolumn}<th class="rnr-gridfieldlabel {$POS_Number_class}">
+									{BEGIN POS_Number_fieldheader}<span {$POS_Number_orderlinkattrs}>
+											{$label simcards_batches_query POS_Number}
+										</span>
+									{END POS_Number_fieldheader}
+									</th>
+									{END POS_Number_fieldheadercolumn}
+
+																	{BEGIN Event_date_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Event_date_class}">
+									{BEGIN Event_date_fieldheader}<span {$Event_date_orderlinkattrs}>
+											{$label simcards_batches_query Event_date}
+										</span>
+									{END Event_date_fieldheader}
+									</th>
+									{END Event_date_fieldheadercolumn}
+
+																	{BEGIN time_fieldheadercolumn}<th class="rnr-gridfieldlabel {$time_class}">
+									{BEGIN time_fieldheader}<span {$time_orderlinkattrs}>
+											{$label simcards_batches_query time}
+										</span>
+									{END time_fieldheader}
+									</th>
+									{END time_fieldheadercolumn}
+
+																	{BEGIN Activation_Status_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Activation_Status_class}">
+									{BEGIN Activation_Status_fieldheader}<span {$Activation_Status_orderlinkattrs}>
+											{$label simcards_batches_query Activation_Status}
+										</span>
+									{END Activation_Status_fieldheader}
+									</th>
+									{END Activation_Status_fieldheadercolumn}
+
+																	{BEGIN FL_or_POS_Name_fieldheadercolumn}<th class="rnr-gridfieldlabel {$FL_or_POS_Name_class}">
+									{BEGIN FL_or_POS_Name_fieldheader}<span {$FL_or_POS_Name_orderlinkattrs}>
+											{$label simcards_batches_query FL_or_POS_Name}
+										</span>
+									{END FL_or_POS_Name_fieldheader}
+									</th>
+									{END FL_or_POS_Name_fieldheadercolumn}
+
+																	{BEGIN TL_Name_fieldheadercolumn}<th class="rnr-gridfieldlabel {$TL_Name_class}">
+									{BEGIN TL_Name_fieldheader}<span {$TL_Name_orderlinkattrs}>
+											{$label simcards_batches_query TL_Name}
+										</span>
+									{END TL_Name_fieldheader}
+									</th>
+									{END TL_Name_fieldheadercolumn}
+
+																	{BEGIN SC_DSO_RDO_Name_fieldheadercolumn}<th class="rnr-gridfieldlabel {$SC_DSO_RDO_Name_class}">
+									{BEGIN SC_DSO_RDO_Name_fieldheader}<span {$SC_DSO_RDO_Name_orderlinkattrs}>
+											{$label simcards_batches_query SC_DSO_RDO_Name}
+										</span>
+									{END SC_DSO_RDO_Name_fieldheader}
+									</th>
+									{END SC_DSO_RDO_Name_fieldheadercolumn}
+
+																	{BEGIN batch_name_fieldheadercolumn}<th class="rnr-gridfieldlabel {$batch_name_class}">
+									{BEGIN batch_name_fieldheader}<span {$batch_name_orderlinkattrs}>
+											{$label simcards_batches_query batch_name}
+										</span>
+									{END batch_name_fieldheader}
+									</th>
+									{END batch_name_fieldheadercolumn}
+
+																	{BEGIN ICCID_fieldheadercolumn}<th class="rnr-gridfieldlabel {$ICCID_class}">
+									{BEGIN ICCID_fieldheader}<span {$ICCID_orderlinkattrs}>
+											{$label simcards_batches_query ICCID}
+										</span>
+									{END ICCID_fieldheader}
+									</th>
+									{END ICCID_fieldheadercolumn}
+
+																	{BEGIN Active_MSISDN_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Active_MSISDN_class}">
+									{BEGIN Active_MSISDN_fieldheader}<span {$Active_MSISDN_orderlinkattrs}>
+											{$label simcards_batches_query Active_MSISDN}
+										</span>
+									{END Active_MSISDN_fieldheader}
+									</th>
+									{END Active_MSISDN_fieldheadercolumn}
+
+																	{BEGIN New_MSISDN_fieldheadercolumn}<th class="rnr-gridfieldlabel {$New_MSISDN_class}">
+									{BEGIN New_MSISDN_fieldheader}<span {$New_MSISDN_orderlinkattrs}>
+											{$label simcards_batches_query New_MSISDN}
+										</span>
+									{END New_MSISDN_fieldheader}
+									</th>
+									{END New_MSISDN_fieldheadercolumn}
+
+																	{BEGIN Swap_Date_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Swap_Date_class}">
+									{BEGIN Swap_Date_fieldheader}<span {$Swap_Date_orderlinkattrs}>
+											{$label simcards_batches_query Swap_Date}
+										</span>
+									{END Swap_Date_fieldheader}
+									</th>
+									{END Swap_Date_fieldheadercolumn}
+
+																	{BEGIN Airtime_transered_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Airtime_transered_class}">
+									{BEGIN Airtime_transered_fieldheader}<span {$Airtime_transered_orderlinkattrs}>
+											{$label simcards_batches_query Airtime_transered}
+										</span>
+									{END Airtime_transered_fieldheader}
+									</th>
+									{END Airtime_transered_fieldheadercolumn}
+
+																	{BEGIN Transfer_date_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Transfer_date_class}">
+									{BEGIN Transfer_date_fieldheader}<span {$Transfer_date_orderlinkattrs}>
+											{$label simcards_batches_query Transfer_date}
+										</span>
+									{END Transfer_date_fieldheader}
+									</th>
+									{END Transfer_date_fieldheadercolumn}
+
+																	{BEGIN Activation_Commission_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Activation_Commission_class}">
+									{BEGIN Activation_Commission_fieldheader}<span {$Activation_Commission_orderlinkattrs}>
+											{$label simcards_batches_query Activation_Commission}
+										</span>
+									{END Activation_Commission_fieldheader}
+									</th>
+									{END Activation_Commission_fieldheadercolumn}
+
+																	{BEGIN Form_Returned_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Form_Returned_class}">
+									{BEGIN Form_Returned_fieldheader}<span {$Form_Returned_orderlinkattrs}>
+											{$label simcards_batches_query Form_Returned}
+										</span>
+									{END Form_Returned_fieldheader}
+									</th>
+									{END Form_Returned_fieldheadercolumn}
+
+																	{BEGIN Form_Status_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Form_Status_class}">
+									{BEGIN Form_Status_fieldheader}<span {$Form_Status_orderlinkattrs}>
+											{$label simcards_batches_query Form_Status}
+										</span>
+									{END Form_Status_fieldheader}
+									</th>
+									{END Form_Status_fieldheadercolumn}
+
+																	{BEGIN Form_Commission_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Form_Commission_class}">
+									{BEGIN Form_Commission_fieldheader}<span {$Form_Commission_orderlinkattrs}>
+											{$label simcards_batches_query Form_Commission}
+										</span>
+									{END Form_Commission_fieldheader}
+									</th>
+									{END Form_Commission_fieldheadercolumn}
+
+																	{BEGIN Form_Paid_Date_fieldheadercolumn}<th class="rnr-gridfieldlabel {$Form_Paid_Date_class}">
+									{BEGIN Form_Paid_Date_fieldheader}<span {$Form_Paid_Date_orderlinkattrs}>
+											{$label simcards_batches_query Form_Paid_Date}
+										</span>
+									{END Form_Paid_Date_fieldheader}
+									</th>
+									{END Form_Paid_Date_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}{BEGIN listIcons_column}<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+									
+																		{BEGIN inlineedit_column}{BEGIN inlineedit_link}<a class="rnr-button-img" {$inlineeditlink_attrs} data-icon="inlineedit" title="Inline Edit"></a>
+									{END inlineedit_link}
+									{END inlineedit_column}
+
+									
+																		</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+
+										{BEGIN POS_Number_fieldcolumn}<td class="{$POS_Number_class}" {$POS_Number_style} {$recordattrs}>
+		{$POS_Number_value}
+	</td>
+{END POS_Number_fieldcolumn}
+
+	{BEGIN Event_date_fieldcolumn}<td class="{$Event_date_class}" {$Event_date_style} {$recordattrs}>
+		{$Event_date_value}
+	</td>
+{END Event_date_fieldcolumn}
+
+	{BEGIN time_fieldcolumn}<td class="{$time_class}" {$time_style} {$recordattrs}>
+		{$time_value}
+	</td>
+{END time_fieldcolumn}
+
+	{BEGIN Activation_Status_fieldcolumn}<td class="{$Activation_Status_class}" {$Activation_Status_style} {$recordattrs}>
+		{$Activation_Status_value}
+	</td>
+{END Activation_Status_fieldcolumn}
+
+	{BEGIN FL_or_POS_Name_fieldcolumn}<td class="{$FL_or_POS_Name_class}" {$FL_or_POS_Name_style} {$recordattrs}>
+		{$FL_or_POS_Name_value}
+	</td>
+{END FL_or_POS_Name_fieldcolumn}
+
+	{BEGIN TL_Name_fieldcolumn}<td class="{$TL_Name_class}" {$TL_Name_style} {$recordattrs}>
+		{$TL_Name_value}
+	</td>
+{END TL_Name_fieldcolumn}
+
+	{BEGIN SC_DSO_RDO_Name_fieldcolumn}<td class="{$SC_DSO_RDO_Name_class}" {$SC_DSO_RDO_Name_style} {$recordattrs}>
+		{$SC_DSO_RDO_Name_value}
+	</td>
+{END SC_DSO_RDO_Name_fieldcolumn}
+
+	{BEGIN batch_name_fieldcolumn}<td class="{$batch_name_class}" {$batch_name_style} {$recordattrs}>
+		{$batch_name_value}
+	</td>
+{END batch_name_fieldcolumn}
+
+	{BEGIN ICCID_fieldcolumn}<td class="{$ICCID_class}" {$ICCID_style} {$recordattrs}>
+		{$ICCID_value}
+	</td>
+{END ICCID_fieldcolumn}
+
+	{BEGIN Active_MSISDN_fieldcolumn}<td class="{$Active_MSISDN_class}" {$Active_MSISDN_style} {$recordattrs}>
+		{$Active_MSISDN_value}
+	</td>
+{END Active_MSISDN_fieldcolumn}
+
+	{BEGIN New_MSISDN_fieldcolumn}<td class="{$New_MSISDN_class}" {$New_MSISDN_style} {$recordattrs}>
+		{$New_MSISDN_value}
+	</td>
+{END New_MSISDN_fieldcolumn}
+
+	{BEGIN Swap_Date_fieldcolumn}<td class="{$Swap_Date_class}" {$Swap_Date_style} {$recordattrs}>
+		{$Swap_Date_value}
+	</td>
+{END Swap_Date_fieldcolumn}
+
+	{BEGIN Airtime_transered_fieldcolumn}<td class="{$Airtime_transered_class}" {$Airtime_transered_style} {$recordattrs}>
+		{$Airtime_transered_value}
+	</td>
+{END Airtime_transered_fieldcolumn}
+
+	{BEGIN Transfer_date_fieldcolumn}<td class="{$Transfer_date_class}" {$Transfer_date_style} {$recordattrs}>
+		{$Transfer_date_value}
+	</td>
+{END Transfer_date_fieldcolumn}
+
+	{BEGIN Activation_Commission_fieldcolumn}<td class="{$Activation_Commission_class}" {$Activation_Commission_style} {$recordattrs}>
+		{$Activation_Commission_value}
+	</td>
+{END Activation_Commission_fieldcolumn}
+
+	{BEGIN Form_Returned_fieldcolumn}<td class="{$Form_Returned_class}" {$Form_Returned_style} {$recordattrs}>
+		{$Form_Returned_value}
+	</td>
+{END Form_Returned_fieldcolumn}
+
+	{BEGIN Form_Status_fieldcolumn}<td class="{$Form_Status_class}" {$Form_Status_style} {$recordattrs}>
+		{$Form_Status_value}
+	</td>
+{END Form_Status_fieldcolumn}
+
+	{BEGIN Form_Commission_fieldcolumn}<td class="{$Form_Commission_class}" {$Form_Commission_style} {$recordattrs}>
+		{$Form_Commission_value}
+	</td>
+{END Form_Commission_fieldcolumn}
+
+	{BEGIN Form_Paid_Date_fieldcolumn}<td class="{$Form_Paid_Date_class}" {$Form_Paid_Date_style} {$recordattrs}>
+		{$Form_Paid_Date_value}
+	</td>
+{END Form_Paid_Date_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		<P align="center">
+{$footer}
+	<P></P>{END body}
+	</body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel Average_Airtime_Consumption_3_Months print}</h1>
+</div>
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Activator_Number_fieldheadercolumn}
+<th class="runner-cc {$Activator_Number_class}" {$Activator_Number_style}>
+	{BEGIN Activator_Number_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Activator_Number}</b>
+	{END Activator_Number_fieldheader}
+</th>
+{END Activator_Number_fieldheadercolumn}
+	{BEGIN Activator_Name_fieldheadercolumn}
+<th class="runner-cc {$Activator_Name_class}" {$Activator_Name_style}>
+	{BEGIN Activator_Name_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Activator_Name}</b>
+	{END Activator_Name_fieldheader}
+</th>
+{END Activator_Name_fieldheadercolumn}
+	{BEGIN Manager_Name_fieldheadercolumn}
+<th class="runner-cc {$Manager_Name_class}" {$Manager_Name_style}>
+	{BEGIN Manager_Name_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Manager_Name}</b>
+	{END Manager_Name_fieldheader}
+</th>
+{END Manager_Name_fieldheadercolumn}
+	{BEGIN Title_fieldheadercolumn}
+<th class="runner-cc {$Title_class}" {$Title_style}>
+	{BEGIN Title_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Title}</b>
+	{END Title_fieldheader}
+</th>
+{END Title_fieldheadercolumn}
+	{BEGIN Subscriber_Number_fieldheadercolumn}
+<th class="runner-cc {$Subscriber_Number_class}" {$Subscriber_Number_style}>
+	{BEGIN Subscriber_Number_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Subscriber_Number}</b>
+	{END Subscriber_Number_fieldheader}
+</th>
+{END Subscriber_Number_fieldheadercolumn}
+	{BEGIN Date_Activated_fieldheadercolumn}
+<th class="runner-cc {$Date_Activated_class}" {$Date_Activated_style}>
+	{BEGIN Date_Activated_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Date_Activated}</b>
+	{END Date_Activated_fieldheader}
+</th>
+{END Date_Activated_fieldheadercolumn}
+	{BEGIN Consumption_fieldheadercolumn}
+<th class="runner-cc {$Consumption_class}" {$Consumption_style}>
+	{BEGIN Consumption_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months Consumption}</b>
+	{END Consumption_fieldheader}
+</th>
+{END Consumption_fieldheadercolumn}
+	{BEGIN End_of_3_Month_fieldheadercolumn}
+<th class="runner-cc {$End_of_3_Month_class}" {$End_of_3_Month_style}>
+	{BEGIN End_of_3_Month_fieldheader}
+	<b>{$label Average_Airtime_Consumption_3_Months End_of_3_Month}</b>
+	{END End_of_3_Month_fieldheader}
+</th>
+{END End_of_3_Month_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Activator_Number_fieldcolumn}
+<td  class="runner-cc {$Activator_Number_class}" {$Activator_Number_style} {$recordattrs}>
+	{$Activator_Number_value}
+</td>
+{END Activator_Number_fieldcolumn}
+	{BEGIN Activator_Name_fieldcolumn}
+<td  class="runner-cc {$Activator_Name_class}" {$Activator_Name_style} {$recordattrs}>
+	{$Activator_Name_value}
+</td>
+{END Activator_Name_fieldcolumn}
+	{BEGIN Manager_Name_fieldcolumn}
+<td  class="runner-cc {$Manager_Name_class}" {$Manager_Name_style} {$recordattrs}>
+	{$Manager_Name_value}
+</td>
+{END Manager_Name_fieldcolumn}
+	{BEGIN Title_fieldcolumn}
+<td  class="runner-cc {$Title_class}" {$Title_style} {$recordattrs}>
+	{$Title_value}
+</td>
+{END Title_fieldcolumn}
+	{BEGIN Subscriber_Number_fieldcolumn}
+<td  class="runner-cc {$Subscriber_Number_class}" {$Subscriber_Number_style} {$recordattrs}>
+	{$Subscriber_Number_value}
+</td>
+{END Subscriber_Number_fieldcolumn}
+	{BEGIN Date_Activated_fieldcolumn}
+<td  class="runner-cc {$Date_Activated_class}" {$Date_Activated_style} {$recordattrs}>
+	{$Date_Activated_value}
+</td>
+{END Date_Activated_fieldcolumn}
+	{BEGIN Consumption_fieldcolumn}
+<td  class="runner-cc {$Consumption_class}" {$Consumption_style} {$recordattrs}>
+	{$Consumption_value}
+</td>
+{END Consumption_fieldcolumn}
+	{BEGIN End_of_3_Month_fieldcolumn}
+<td  class="runner-cc {$End_of_3_Month_class}" {$End_of_3_Month_style} {$recordattrs}>
+	{$End_of_3_Month_value}
+</td>
+{END End_of_3_Month_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

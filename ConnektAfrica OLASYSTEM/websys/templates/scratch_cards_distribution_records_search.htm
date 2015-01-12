@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY class="{$stylename} function-search" {$bodyattrs}>{BEGIN body}
+<P align=center>{$header} </P>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_search}
+<DIV class="rnr-c rnr-cv rnr-c-search">
+<DIV 
+class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><SPAN>{$pagetitlelabel scratch_cards_distribution_records search} </SPAN></DIV>
+{BEGIN conditions_block}<DIV class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">
+<CENTER><SPAN class=fieldname>Criteria:&nbsp;</SPAN> <INPUT class=rnr-radio-button type=radio name=srchType {$all_checkbox}><LABEL for=all_checkbox> All conditions</LABEL> 
+&nbsp;&nbsp;&nbsp; <INPUT class=rnr-radio-button type=radio name=srchType {$any_checkbox}><LABEL for=any_checkbox> Any 
+condition</LABEL> </CENTER></DIV>
+{END conditions_block}<DIV 
+class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>NOT</TD>
+    <TD colSpan=3>&nbsp; </TD></TR>
+  <TR class={$fielddispclass_Dist_ID}>{BEGIN Dist_ID_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Dist_ID} </TD>
+    <TD><INPUT type=checkbox {$Dist_ID_notbox}> </TD>
+    <TD>{$searchtype_Dist_ID} </TD>
+    <TD>{$Dist_ID_editcontrol}&nbsp; </TD>
+    <TD>{$Dist_ID_editcontrol1}&nbsp; </TD>{END Dist_ID_fieldblock}</TR>
+  <TR class={$fielddispclass_Dist_Date}>{BEGIN Dist_Date_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Dist_Date} 
+    </TD>
+    <TD><INPUT type=checkbox {$Dist_Date_notbox}> 
+</TD>
+    <TD>{$searchtype_Dist_Date} </TD>
+    <TD>{$Dist_Date_editcontrol}&nbsp; </TD>
+    <TD>{$Dist_Date_editcontrol1}&nbsp; </TD>{END Dist_Date_fieldblock}</TR>
+  <TR class={$fielddispclass_Serial_No_From}>{BEGIN Serial_No_From_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Serial_No_From} </TD>
+    <TD><INPUT type=checkbox {$Serial_No_From_notbox}> </TD>
+    <TD>{$searchtype_Serial_No_From} </TD>
+    <TD>{$Serial_No_From_editcontrol}&nbsp; </TD>
+    <TD>{$Serial_No_From_editcontrol1}&nbsp; </TD>{END Serial_No_From_fieldblock}</TR>
+  <TR class={$fielddispclass_Serial_No_To}>{BEGIN Serial_No_To_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Serial_No_To} </TD>
+    <TD><INPUT type=checkbox {$Serial_No_To_notbox}> 
+    </TD>
+    <TD>{$searchtype_Serial_No_To} </TD>
+    <TD>{$Serial_No_To_editcontrol}&nbsp; 
+    </TD>
+    <TD>{$Serial_No_To_editcontrol1}&nbsp; 
+    </TD>{END Serial_No_To_fieldblock}</TR>
+  <TR class={$fielddispclass_Full_Name}>{BEGIN Full_Name_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Full_Name} 
+    </TD>
+    <TD><INPUT type=checkbox {$Full_Name_notbox}> 
+</TD>
+    <TD>{$searchtype_Full_Name} </TD>
+    <TD>{$Full_Name_editcontrol}&nbsp; </TD>
+    <TD>{$Full_Name_editcontrol1}&nbsp; </TD>{END Full_Name_fieldblock}</TR>
+  <TR class={$fielddispclass_POS_ALT_Number}>{BEGIN POS_ALT_Number_fieldblock}
+    <TD>{$label scratch_cards_distribution_records POS_ALT_Number} </TD>
+    <TD><INPUT type=checkbox {$POS_ALT_Number_notbox}> </TD>
+    <TD>{$searchtype_POS_ALT_Number} </TD>
+    <TD>{$POS_ALT_Number_editcontrol}&nbsp; </TD>
+    <TD>{$POS_ALT_Number_editcontrol1}&nbsp; </TD>{END POS_ALT_Number_fieldblock}</TR>
+  <TR class={$fielddispclass_Area}>{BEGIN Area_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Area} </TD>
+    <TD><INPUT type=checkbox {$Area_notbox}> </TD>
+    <TD>{$searchtype_Area} </TD>
+    <TD>{$Area_editcontrol}&nbsp; </TD>
+    <TD>{$Area_editcontrol1}&nbsp; </TD>{END Area_fieldblock}</TR>
+  <TR class={$fielddispclass_Alt_Number}>{BEGIN Alt_Number_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Alt_Number} 
+    </TD>
+    <TD><INPUT type=checkbox {$Alt_Number_notbox}> 
+    </TD>
+    <TD>{$searchtype_Alt_Number} </TD>
+    <TD>{$Alt_Number_editcontrol}&nbsp; </TD>
+    <TD>{$Alt_Number_editcontrol1}&nbsp; 
+  </TD>{END Alt_Number_fieldblock}</TR>
+  <TR class={$fielddispclass_Denomination}>{BEGIN Denomination_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Denomination} </TD>
+    <TD><INPUT type=checkbox {$Denomination_notbox}> 
+    </TD>
+    <TD>{$searchtype_Denomination} </TD>
+    <TD>{$Denomination_editcontrol}&nbsp; 
+    </TD>
+    <TD>{$Denomination_editcontrol1}&nbsp; 
+    </TD>{END Denomination_fieldblock}</TR>
+  <TR class={$fielddispclass_Quantity}>{BEGIN Quantity_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Quantity} 
+</TD>
+    <TD><INPUT type=checkbox {$Quantity_notbox}> </TD>
+    <TD>{$searchtype_Quantity} </TD>
+    <TD>{$Quantity_editcontrol}&nbsp; </TD>
+    <TD>{$Quantity_editcontrol1}&nbsp; </TD>{END Quantity_fieldblock}</TR>
+  <TR class={$fielddispclass_Lat}>{BEGIN Lat_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Lat} </TD>
+    <TD><INPUT type=checkbox {$Lat_notbox}> </TD>
+    <TD>{$searchtype_Lat} </TD>
+    <TD>{$Lat_editcontrol}&nbsp; </TD>
+    <TD>{$Lat_editcontrol1}&nbsp; </TD>{END Lat_fieldblock}</TR>
+  <TR class={$fielddispclass_Lon}>{BEGIN Lon_fieldblock}
+    <TD>{$label scratch_cards_distribution_records Lon} </TD>
+    <TD><INPUT type=checkbox {$Lon_notbox}> </TD>
+    <TD>{$searchtype_Lon} </TD>
+    <TD>{$Lon_editcontrol}&nbsp; </TD>
+    <TD>{$Lon_editcontrol1}&nbsp; </TD>{END Lon_fieldblock}</TR>
+  <TR class={$fielddispclass_DSO_Name}>{BEGIN DSO_Name_fieldblock}
+    <TD>{$label scratch_cards_distribution_records DSO_Name} 
+</TD>
+    <TD><INPUT type=checkbox {$DSO_Name_notbox}> </TD>
+    <TD>{$searchtype_DSO_Name} </TD>
+    <TD>{$DSO_Name_editcontrol}&nbsp; </TD>
+    <TD>{$DSO_Name_editcontrol1}&nbsp; </TD>{END DSO_Name_fieldblock}</TR>
+  <TR class={$fielddispclass_DSO_Number}>{BEGIN DSO_Number_fieldblock}
+    <TD>{$label scratch_cards_distribution_records DSO_Number} 
+    </TD>
+    <TD><INPUT type=checkbox {$DSO_Number_notbox}> 
+    </TD>
+    <TD>{$searchtype_DSO_Number} </TD>
+    <TD>{$DSO_Number_editcontrol}&nbsp; </TD>
+    <TD>{$DSO_Number_editcontrol1}&nbsp; 
+  </TD>{END DSO_Number_fieldblock}</TR></TBODY></TABLE></DIV>
+<DIV 
+class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<A class="rnr-button main" href="#" {$searchbutton_attrs}>Search</A> {END search_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Reset</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Back to list</A> 
+{END back_button}</DIV></DIV>{END container_fields}</DIV></DIV>{END container_search}</DIV>
+<DIV class=rnr-page>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV 
+class="rnr-right {$blockclass_right}"></DIV></DIV></DIV>
+<DIV 
+class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV>
+<P align=center>{$footer} </P>{END body}</BODY></HTML>
