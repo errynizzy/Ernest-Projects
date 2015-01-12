@@ -1,0 +1,1 @@
+scripts that do Oracle to MySQL then MySQL to Mysql
