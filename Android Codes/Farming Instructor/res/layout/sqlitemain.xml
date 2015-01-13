@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sp"
+    android:fillViewport="true" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#ff000000"
+    android:text="Date" />
+
+<TableRow
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <EditText
+        android:id="@+id/displayDate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+    
+    <ImageButton
+        android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/cal" />
+
+</TableRow>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#ff000000"
+    android:text="Activity to Do:" />
+
+<EditText
+    android:id="@+id/content2"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+<Button
+    android:id="@+id/add"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Add"
+    />
+
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+
+
+    <Button
+        android:id="@+id/deleteall"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Delete All" />
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+</TableRow>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<Button
+    android:id="@+id/sortbyDefault"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:text="Sort By default"
+    />
+
+<Button
+    android:id="@+id/sortby1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Sort By Date" />
+
+</LinearLayout>
+<ListView
+	android:id="@+id/contentlist"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"/>
+</LinearLayout>
+</ScrollView>

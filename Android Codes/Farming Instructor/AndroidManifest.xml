@@ -1,0 +1,213 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ernest.farming.instructor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="8"
+        android:maxSdkVersion="16" />
+    
+    
+   
+     <uses-permission android:name="android.permission.INTERNET"/>
+    
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+     
+ 
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         
+        
+        
+        <activity
+            android:name=".SplashActivity"
+            android:label="Farming Instructor"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+          
+        
+        
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"></activity>
+        
+         <activity
+            android:name=".Success"
+            android:screenOrientation="portrait"></activity>
+         
+         <activity
+            android:name=".MyIDActivity"
+            android:screenOrientation="portrait"></activity>
+         
+         <activity
+            android:name=".Crops"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".PestControl"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".AfterHarvest"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".SpeechMenu"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".CropsSpeech"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".PestControlSpeech"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".AnimalsActivity"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".AnimalsActivitySpeech"
+            android:screenOrientation="portrait"></activity>
+             
+             
+             
+             
+            
+            <activity
+            android:name=".SplashAgro"
+            android:screenOrientation="portrait"></activity>
+            
+            <uses-library android:name="com.google.android.maps" />
+            
+            <activity
+            android:name=".GoogleMapsActivity"
+            ></activity>
+             
+            
+            
+             <activity
+            android:name=".MySQLiteDB"
+             android:screenOrientation="portrait"></activity>
+             
+             
+            
+            <activity
+            android:name=".AddTipMenuActivity"
+             android:screenOrientation="portrait"></activity>
+             
+              <activity
+            android:name=".CropAddTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".SuccessAddTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".PestAddTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".AnimalAddTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".AfterHarvestAddTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".EcoFriendAddTip"
+             android:screenOrientation="portrait"></activity>
+             
+              <activity
+            android:name=".OnlineTipMenu"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".OnlineCropTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".OnlinePestTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".OnlineAnimalTip"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".OnlineAfterHarvestTip"
+             android:screenOrientation="portrait"></activity>
+             
+             
+             <activity
+            android:name=".OnlineEcoFriendTip"
+             android:screenOrientation="portrait"></activity>
+             
+              <activity
+            android:name=".AfterHarvestSpeech"
+             android:screenOrientation="portrait"></activity>
+             
+             
+              <activity
+            android:name=".EcoFriend"
+             android:screenOrientation="portrait"></activity>
+             
+             
+             <activity
+            android:name=".EcoFriendSpeech"
+             android:screenOrientation="portrait"></activity>
+             
+             
+              <activity
+            android:name=".Comment"
+             android:screenOrientation="portrait"></activity>
+             
+             
+              <activity
+            android:name=".SuccessComment"
+             android:screenOrientation="portrait"></activity>
+             
+             
+             <activity
+            android:name=".About"
+             android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".AnimatedActivity"></activity>
+             
+            
+             
+             
+             
+             
+              
+             
+             
+             
+             
+             
+             
+              
+        
+    </application>
+
+</manifest>

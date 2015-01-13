@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="instructions">Add a Word(s). Then press on Word to drag it. Drop it on the grid.</string>
+    <string name="hello">Add a Word(s). Then drag it onto the grid.</string>
+
+    <string name="app_name">City Survivor</string>
+    
+    <integer name="num_images">30</integer>
+    <integer name="num_columns">5</integer>
+
+</resources>

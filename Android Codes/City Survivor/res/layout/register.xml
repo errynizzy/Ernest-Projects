@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:visibility="visible" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+   
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="Open City Survivor Account"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0000ff" />
+
+    
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:text="Full Names:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableRow>
+        
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff000000" />
+
+    </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="#ff000000"
+                android:ems="10"
+                android:fadingEdge="vertical"
+                android:textColor="#ff000000"
+                
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff000000" />
+
+    </TableRow>
+        
+       
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <AutoCompleteTextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="#ff000000"
+                android:ems="10"
+                android:fadingEdge="vertical"
+                android:textColor="#ff000000"
+                
+                android:visibility="visible" />
+
+            </TableRow>
+        
+
+             <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff000000" />
+
+    </TableRow>
+        
+       
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress" />
+
+            </TableRow>
+        
+        
+          <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:               Confirm:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff000000" />
+
+    </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <EditText
+                    android:id="@+id/pswd"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/pswd2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+            </TableRow>
+        
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TableRow>
+        </TableRow>
+        </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonMyId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="My ID" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/showresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:textColor="#ffffffff"
+        android:text="                                   ............................." />
+
+                <ernest.city.survicor.AnimationView
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp" />
+           
+   
+
+</LinearLayout>
+</ScrollView>

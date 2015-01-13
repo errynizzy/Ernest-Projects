@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="@drawable/sp"
+        
+     >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment to Improve Farming Instructor App"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="    Country:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewCountry"
+                android:layout_width="300dp"
+                android:textColor="#ff000000"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+        </TableRow>
+
+       
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/editTextComment"
+                android:layout_width="300dp"
+                android:text="Put your comment here" />
+
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+            
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical" >
+
+
+
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </TableRow>
+
+        
+    </TableLayout>
+    
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/ButtonExit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Exit" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/showresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+
+</LinearLayout>
+</ScrollView>

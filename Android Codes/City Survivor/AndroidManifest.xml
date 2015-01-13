@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ernest.city.survicor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <supports-screens 
+    android:smallScreens="true" 
+    android:largeScreens="true"
+    android:normalScreens="true" 
+    android:resizeable="true"
+    android:anyDensity="true"
+/>
+    
+
+    <application
+        android:icon="@drawable/icon_cs"
+        android:label="@string/app_name"
+        android:smallScreens="true" 
+    android:largeScreens="true"
+    android:normalScreens="true" 
+    android:resizeable="true"
+    android:anyDensity="true" >
+        
+        
+         <receiver android:name=".OlympicsReceiver" android:enabled="true" android:exported="false" 
+           android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            <category android:name="android.intent.category.DEFAULT" />          
+        </intent-filter>      
+    </receiver> 
+        
+        
+        <activity 
+            android:name=".CitySurvivorActivity"
+            android:screenOrientation="portrait"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".FirstClass"
+            android:screenOrientation="portrait"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"></activity>
+        
+        
+        <activity
+            android:name=".Select"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity
+            android:name=".MenuApp"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+        
+         <activity
+            android:name=".MenuGame"
+            android:screenOrientation="portrait"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"></activity>
+            
+            <activity
+            android:name=".RainMenu"
+            android:screenOrientation="portrait"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"></activity>
+            
+            <activity
+            android:name=".HarvestSys"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".FirstActivitySun"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".TimeUpSun"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".FirstActivityRain"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".TimeUpRain"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".FirstActivityWaste"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".TimeUpWaste"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".FirstActivityFire"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".TimeUpFire"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".FirstActivityHealth"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".TimeUpHealth"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".Register"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+        
+         <activity
+            android:name=".Success"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+         
+         <activity
+            android:name=".MyIDActivity"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".AddTipMenuActivity"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".AddTipFire"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".AddTipHealth"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+             
+              <activity
+            android:name=".AddTipRain"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+              
+               <activity
+            android:name=".AddTipSun"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+               
+                <activity
+            android:name=".AddTipWaste"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+                
+                <activity
+            android:name=".SuccessAddTip"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+                
+                 <activity
+            android:name=".HealthApp"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+                 
+                 <activity
+            android:name=".SunApp"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+                 
+                 <activity
+            android:name=".WasteApp"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+                 
+                 <activity
+            android:name=".FireApp"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+                 
+                  <activity
+            android:name=".CreateSys"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".GeneralInfo"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            <activity
+            android:name=".AboutCS"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+             <activity
+            android:name=".AppInfo"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+             
+             <activity
+            android:name=".GameInfo"
+            android:smallScreens="true" 
+		    android:largeScreens="true"
+		    android:normalScreens="true" 
+		    android:resizeable="true"
+		    android:anyDensity="true"
+            android:screenOrientation="portrait"></activity>
+            
+            
+            <service
+				android:enabled="true"
+				android:name=".ServiceTemplate"/>
+            
+            
+        
+    </application>
+
+</manifest>

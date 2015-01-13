@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sp"
+    android:fillViewport="true" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farming Instructor Version 1.0"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ACC437"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/showresult1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:textColor="#ffffffff" />
+
+    
+    
+    <TextView
+        android:id="@+id/showresult2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+     
+     
+    
+    
+    <TextView
+        android:id="@+id/showresult3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+     
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+     
+    
+    
+    
+
+    <TextView
+        android:id="@+id/showresult7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+
+    
+    
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+   
+    
+    <TextView
+        android:id="@+id/showresult11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/showresult12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:background="#99000000" />
+    <Button
+        android:id="@+id/speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak" />
+    
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+    </TableRow>
+
+</LinearLayout>
+</ScrollView>

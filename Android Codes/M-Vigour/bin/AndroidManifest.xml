@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ernest.m.vigour"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <supports-screens 
+        android:resizeable="true"
+    android:smallScreens="false" 
+    android:largeScreens="true"
+    android:normalScreens="true" 
+    android:anyDensity="true"
+/>
+    
+
+    <application
+        android:icon="@drawable/icon3"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MenuActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".HelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".me"></activity>
+        <activity android:name=".SendApntmntActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".CheckUpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".PrescriptionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ResponseAppointment"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ResponseCheckup"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".PrescriptionResponse"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".CounsellingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".VaccinationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".PhysiotherapyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MotherChildActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MoreAppointments"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MorePrescription"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MoreCheckup"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MyFileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MyIDActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SearchWorkerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SearchHCActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".InsuranceMenu"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".InsuranceStatusActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddBeneficary"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ViewBeneficiary"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".DeleteBeneficiary"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".EditBeneficiary"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Complain"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ViewBundle"
+            android:screenOrientation="portrait"></activity>
+        
+    </application>
+
+</manifest>

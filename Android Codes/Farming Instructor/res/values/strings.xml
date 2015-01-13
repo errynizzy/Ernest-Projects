@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Farming Instructor</string>
+    <string name="hello_world">Ernest Mwalusanya!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">Farming Instructor</string>
+    
+
+</resources>

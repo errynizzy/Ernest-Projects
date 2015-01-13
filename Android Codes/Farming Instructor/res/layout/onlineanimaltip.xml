@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="@drawable/sp"
+     >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="View Online Animal Keeping Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Here:"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+    <Spinner
+        android:id="@+id/spinnerSelectCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View" />
+    <Button
+        android:id="@+id/speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+
+
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+    </TableRow>
+
+
+
+    <TextView
+        android:id="@+id/showresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:text=" .."
+        android:textColor="#ffffffff" />
+    
+    <TextView
+        android:id="@+id/showresult1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:text=" .."
+        android:textColor="#ffffffff" />
+
+</LinearLayout>
+</ScrollView>

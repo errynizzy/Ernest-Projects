@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+     >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Sim Cards Distribution"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/showresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" " />
+        
+        <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1.25" >
+
+            <EditText
+                android:id="@+id/add_reg_date"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Registration Date"
+                android:inputType="textPersonName" 
+                 android:editable="false"
+                android:focusable="false"/>
+
+        <ImageButton
+            android:id="@+id/pickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/sep" />
+    </TableRow>
+    
+         <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+        
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:editable="false"
+                android:focusable="false" />
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/add_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="POS Number"
+            android:maxLength="12"
+            android:inputType="number"
+            android:editable="false"
+                android:focusable="false"
+            />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+   
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" >
+         
+         <TextView android:id="@+id/serviceState_info" style="@style/textStyle"/>
+                        <TextView android:id="@+id/cellLocation_info" style="@style/textStyle"/>
+                        <TextView android:id="@+id/callState_info" style="@style/textStyle"/>
+                        <TextView android:id="@+id/connectionState_info" style="@style/textStyle"/>
+
+                                <ProgressBar
+                                    android:id="@+id/signalLevel"
+                                    style="@style/progressStyle"
+                                    android:background="#ffffffff"
+                                    android:visibility="gone" />
+
+                                <TextView android:id="@+id/signalLevelInfo" style="@style/textSmallStyle"/>
+                        <ImageView android:id="@+id/dataDirection" style="@style/imageStyle"/>
+                <TextView android:id="@+id/device_info" style="@style/labelStyleLeft"/>
+         
+     </TableRow>
+
+    
+
+    <LinearLayout
+        android:id="@+id/add_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/add_save_btn"
+           
+            android:layout_gravity="center"
+                        android:text="Drop Sim Card Batch"
+            
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+             android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="0.90"
+            android:background="#000000"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/add_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:text="View All"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.3"
+            android:background="#000000"
+            android:text="Save Updates"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/update_online_btn"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.3"
+            android:background="#000000"
+            android:text="Save Online"
+            android:textColor="#FFFFFF" />
+        
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/update_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/update_view_all"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:text="View All"
+            android:textColor="#FFFFFF" />
+        
+        
+    </LinearLayout>
+</LinearLayout>
+
+
+</ScrollView>

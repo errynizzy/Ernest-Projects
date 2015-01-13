@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:fillViewport="true" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical" >
+    
+    <ernest.city.survicor.AnimationView
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration was successfully! "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#21dbd4"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textColor="#ff000000"
+        android:gravity="center_horizontal"
+
+        android:layout_height="wrap_content"
+        android:text="Go to My Account and click My Id to obtain your Auto Generated Farming Instructor User ID." />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonOky"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Ok" />
+
+    </TableRow>
+
+</LinearLayout>
+</ScrollView>
